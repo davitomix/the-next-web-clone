@@ -36,3 +36,38 @@ body {
   height: 78px;
   width: 100%;
 }
+
+.left-top-li > li {
+  float: left;
+  position: relative;
+}
+
+.right-top-li > li {
+  float: right;
+  position: relative;
+}
+
+header {
+  background-color: salmon;
+  border: 1px solid black;
+  display: flex;
+  height: 468px;
+  width: 100%;
+}
+
+header > div {
+  background-color: lightseagreen;
+  border: 1px solid black;
+  width: 50%;
+  height: 33%;
+}
+
+header > div:first-of-type {
+  flex-direction: row;
+  height: 100%;
+}
+
+header > div:nth-child(n+2) {
+  background-color: white;
+  flex-direction: column;
+}
