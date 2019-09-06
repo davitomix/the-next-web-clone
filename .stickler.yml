@@ -1,0 +1,6 @@
+linters:
+  stylelint:
+    config: 'stylelint.config.js'
+    ignore: 'box-model,ids'
+files:
+  ignore: 'reset.css'
