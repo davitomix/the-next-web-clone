@@ -378,3 +378,15 @@ main {
   grid-column: 7/9;
   grid-row: 3/3;
 }
+
+.social {
+  background-color: #131313;
+  height: 160px;
+  width: 100%;
+}
+
+.legal {
+  background-color: black;
+  height: 97px;
+  width: 100;
+}
