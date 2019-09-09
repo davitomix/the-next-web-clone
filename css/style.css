@@ -20,7 +20,7 @@ body {
   background: rgb(161, 158, 123);
   line-height: 1.4;
   margin: 0 auto;
-  height: 10000px;
+  /* height: 10000px; */
 }
 
 .nav-1 {
@@ -143,7 +143,11 @@ header > div:last-of-type {
 /* Parent */
 main {
   display: grid;
-  justify-content: center;
+  grid-template-columns: 1fr;
+  min-width: 1009px;
+  max-width: 1152px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .news {
@@ -188,7 +192,7 @@ main {
   Parent */
 .fund {
   height: 335px;
-  width: 1152px;
+  width: 100%;
   background-color: lightseagreen;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -241,7 +245,7 @@ main {
 /* ------------------------------- */
 
 .categories {
-  max-width: 100%;
+  width: 100%;
   height: calc(3 * 392px);
   background-color: rgb(44, 45, 105);
   display: grid;
@@ -316,7 +320,7 @@ main {
   grid-template-columns: repeat(8, 1fr);
   grid-template-rows: repeat(3, 1fr);
   height: 641px;
-  width: 1152px;
+  width: 100%;
 }
 
 .deal-header-left {
