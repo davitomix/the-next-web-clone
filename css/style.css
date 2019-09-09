@@ -109,7 +109,7 @@ header {
   grid-gap: 10px;
   grid-template-rows: repeat(8, 1fr);
   grid-template-columns: repeat(8, 1fr);  
-  height: 560px;
+  height: 552px;
   width: 100%;
 }
 
@@ -143,9 +143,8 @@ header > div:last-of-type {
 /* Parent */
 main {
   display: grid;
-  grid-template-columns: 1fr;
-  min-width: 1009px;
-  max-width: 1152px;
+  min-width: 1007px;
+  max-width: 1192px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -246,7 +245,7 @@ main {
 
 .categories {
   width: 100%;
-  height: calc(3 * 392px);
+  height: calc(3 * 680px);
   background-color: rgb(44, 45, 105);
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -393,4 +392,10 @@ main {
   background-color: black;
   height: 97px;
   width: 100;
+}
+
+@media only screen and (max-width: 1002px) {
+  header {
+    height: 458px;
+  }
 }
