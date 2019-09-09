@@ -20,8 +20,6 @@ body {
   background: rgb(161, 158, 123);
   line-height: 1.4;
   margin: 0 auto;
-  max-width: 100%;
-  max-width: 1280px;
   height: 10000px;
 }
 
@@ -69,7 +67,7 @@ body {
   background: rgb(108, 141, 194);
   border: 1px solid black;
   height: 78px;
-  width: 1280px;
+  width: 100%;
 }
 
 .sticky {
