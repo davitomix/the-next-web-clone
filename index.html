@@ -5,17 +5,116 @@
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <meta http-equiv="X-UA-Compatible" content="ie=edge">
             <link rel="stylesheet" type="text/css" href="css/reset.css">
-            <link rel="stylesheet" type="text/css" href="css/styles.css">
+            <link rel="stylesheet" type="text/css" href="css/style.css">
             <link rel="shortcut icon" href="https://static01.nyt.com/favicon.ico" />
             <title>The Next Web Clone</title>
     </head>
     <body>
-        <nav class="nav-1"></nav>
-        <nav class="nav-2"></nav>
-        <header class="cover"></header>
+        <nav class="nav-1">
+            <div class="nav-box">
+							<ul class="left-list">
+								<li><a href="#">News</a></li>
+								<li>
+										<select>
+												<option value="Events"><a href="#">Events</a></option>
+												<option value="Hard Fork Summit">Hard Fork Summit</option>
+												<option value="TNW 2020">TNW 2020</option>
+										</select>                    
+								</li>
+								<li><a href="#">Business</a></li>
+								<li><a href="#">AMAs</a></li>
+								<li><a href="#">Spaces</a></li>
+								<li><a href="#">Terms and conditions</a></li>
+							</ul>
+            </div>
+            <div class="nav-box">
+								<ul class="right-list">
+									<li><a href="#">About</a></li>
+									<li><a href="#">Team</a></li>
+									<li><a href="#">Advertise</a></li>
+									<li><a href="#">Jobs</a></li>
+									<li><a href="#">Contact</a></li>
+								</ul>
+            </div>
+        </nav>
+        <nav class="nav-2" id="sticky-nav">
+            <div class="nav-2-box" >
+                <ul>
+                    <li><a href="" class="hello1">LATEST</a></li>
+                    <li><a href="" class="hello2">HARD FORK</a></li>
+                    <li><a href="" class="hello3">PLUGGED</a></li>
+                    <li><a href="" class="hello4">FUNDAMENTALS</a></li>
+                    <li><a href="" class="hello5">WORK 2030</a></li>
+                </ul>
+            </div>
+
+            <a href="#"><div class="announcement">
+                Say hi to TNW at Hard Fork Summit on October 15-17 in Amsterdam →
+            </div></a>
+				</nav>
+        <header class="cover">
+            <div>big-left</div>
+            <div>small-top-right</div>
+            <div>small-bottom-right</div>
+        </header>
         <main>
-            <article class="news"></article>
-            <section class="fund"></section>
+            <article class="news">
+                <div><a href="#">Latest news ></a></div>
+                <div class="sub-news">
+                    <div class="news-items">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div class="news-items">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div class="news-items">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div class="news-items">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div class="news-items">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div class="news-items">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div class="news-items">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div class="news-items">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                </div>              
+            </article>
+            <section class="fund">
+                <div class="fund-header">
+                    <div class="fund-header-left">left-box</div>
+                    <div class="fund-header-right">right-box</div>
+                </div>
+                <div class="fund-content-box">
+                    <div class="fund-content-subbox">box-1</div>
+                    <div class="fund-content-subbox">box-2</div>
+                    <div class="fund-content-subbox">box-3</div>
+                    <div class="fund-content-subbox">box-4</div>
+                </div>
+            </section>
             <article class="categories">
                 <div class="apps"></div>
                 <div class="gear"></div>
@@ -33,4 +132,5 @@
             <div class="copyright"></div>
         </footer>
     </body>
+    <script src="sticky.js"></script>
 </html> 

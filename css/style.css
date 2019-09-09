@@ -1,0 +1,188 @@
+/*  CSS
+ Variables
+ csslint ignore:start */
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}/* csslint ignore:end */
+
+html {
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(5, 4, 5);
+}
+
+body {
+  background: rgb(192, 177, 44);
+  line-height: 1.4;
+  margin: auto;
+  max-width: 100%;
+  min-width: 1280px;
+  min-height: 10000px;
+}
+
+.nav-1 {
+  /* background: rgb(151, 139, 139); */
+  border: 1px solid black;
+  display: flex;
+  flex-flow: row wrap;
+  height: 32px;
+  width: 100%;
+}
+
+.nav-box {
+  /* background-color: rgb(255, 253, 127);
+  border: 1px solid black; */
+  display: flex;
+  flex-flow: row wrap;
+  height: 100%;
+  width: 50%;
+}
+
+.nav-box ul {
+  background-color: rgb(108, 194, 183);
+  border: 1px solid black;
+  height: 100%;
+}
+
+.left-list {
+  float: left;
+  margin-right: auto;
+  width: 90%;
+}
+
+.right-list {
+  width: 60%;
+  margin-left: auto;
+}
+
+.right-list > li,
+.left-list > li {
+  display: inline;
+}
+
+.nav-2 {
+  background: rgb(108, 141, 194);
+  border: 1px solid black;
+  height: 78px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.sticky {
+  display: flex;
+  flex-direction: column;
+  /* padding-top: 60px; */
+  position: fixed;
+  top: 0;
+}
+
+.nav-2-box {
+  background-color: lightgray;
+  height: 50px;
+  width: 100%;
+}
+
+.nav-2-box > ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color:lightgray;
+}
+
+.nav-2-box > ul > li {
+  float: left;
+}
+
+.announcement {
+  background-color: yellow;
+  height: 28px;
+  width: 100%;
+}
+
+header {
+  background-color: salmon;
+  border: 1px solid black;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-rows: repeat(8, 1fr);
+  grid-template-columns: repeat(8, 1fr);  
+  height: 560px;
+  width: 100%;
+}
+
+header > div:first-of-type {
+  background-color: rgb(136, 43, 20);
+  border: 1px solid black;
+  grid-row: 1/9;
+  grid-column: 1/6;
+  width: 100%;
+  height: 100%;
+}
+
+header > div:nth-child(2) {
+  background-color: lightseagreen;
+  border: 1px solid black;
+  grid-row: 1/5;
+  grid-column: 6/9;
+  width: 100%;
+  height: 100%;
+}
+
+header > div:last-of-type {
+  background-color: rgb(23, 11, 88);
+  border: 1px solid black;
+  grid-row: 5/9;
+  grid-column: 6/9;
+  width: 100%;
+  height: 100%;
+}
+
+/* Parent */
+.news {
+  background-color: blanchedalmond;
+  border: 1px solid black;  
+  margin: auto;
+  height: 573px;
+  width: 1152px;
+}
+
+.news > div {
+  height: 50px;
+}
+
+.sub-news {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-gap: 5px;
+}
+
+.sub-news > div {
+  background-color: rgb(122, 22, 84);
+  border: 1px solid black;
+  height: 258px;
+}
+
+.news-items {
+  display: flex;
+  flex-direction: column;
+}
+
+.news-items > div {
+  background-color: rgb(78, 177, 20);
+  border: 1px solid black;
+  height: 33.33%;
+  width: 100%;
+}
+
+/* Parent */
+.fund {
+  background-color: lightseagreen;
+  border: 1px solid black;
+}
