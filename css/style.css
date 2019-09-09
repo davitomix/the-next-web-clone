@@ -74,9 +74,35 @@ body {
 }
 
 .sticky {
-  padding-top: 60px;
-  position: fixed;  
+  display: flex;
+  flex-direction: column;
+  /* padding-top: 60px; */
+  position: fixed;
   top: 0;
+}
+
+.nav-2-box {
+  background-color: lightgray;
+  height: 50px;
+  width: 100%;
+}
+
+.nav-2-box > ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color:lightgray;
+}
+
+.nav-2-box > ul > li {
+  float: left;
+}
+
+.announcement {
+  background-color: yellow;
+  height: 28px;
+  width: 100%;
 }
 
 header {
@@ -153,4 +179,9 @@ header > div:last-of-type {
   border: 1px solid black;
   height: 33.33%;
   width: 100%;
+}
+
+/* Parent */
+.fund {
+  background-color: lightseagreen;
 }
