@@ -631,7 +631,7 @@ footer {
   }
 
   .fund {
-    height: 1000px;
+    height: 933px;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(15, 1fr);
   }
