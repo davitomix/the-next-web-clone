@@ -17,7 +17,7 @@ html {
 }
 
 body {
-  background: rgb(161, 158, 123);
+  background: rgb(87, 83, 39);
   line-height: 1.4;
   margin: 0 auto;
   /* height: 10000px; */
@@ -546,14 +546,14 @@ footer {
   }
 }
 
-@media only screen and (max-width: 769px) {
+@media only screen and (max-width: 767px) {
   header {
-    display: grid;
-    grid-gap: 10px;
+    grid-gap: 0;
     grid-template-rows: repeat(3, 1fr);
     grid-template-columns: repeat(3, 1fr);
     height: 655px;
-    max-width: 745px;
+    max-width: 749px;
+    min-width: 287px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -581,8 +581,28 @@ footer {
 
   main {
     min-width: 287px;
-    max-width: 704px;
+    max-width: 749px;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .news {
+    height: 690px;
+  }
+
+  .sub-news {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(8, 1fr);
+    grid-gap: 0;
+    max-width: 707px;
+    height: 560px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+  }
+
+  .sub-news > div {
+    max-width: 707px;
+    height: calc(560px / 8);
   }
 }
