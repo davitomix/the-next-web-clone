@@ -131,7 +131,7 @@ body {
 }
 
 .announce {
-  color: black; 
+  color: black;
   font-size: 15px;
   text-decoration: none;
 }
@@ -148,12 +148,38 @@ header {
 }
 
 header > div:first-of-type {
-  background-color: rgb(136, 43, 20);
   border: 1px solid black;
   grid-row: 1/9;
   grid-column: 1/6;
   width: 100%;
   height: 100%;
+}
+
+.big-left {
+  background-color: black;
+  background:
+    linear-gradient(to top, transparent, rgb(163, 71, 61) 150%),
+    url(../images/witcher.jpg) no-repeat;
+  background-position: 50% 0;
+  background-size: cover;
+}
+
+.big-left:hover {
+  background-color: rgb(68, 68, 68);
+  background:
+    linear-gradient(to top, transparent, rgb(45, 100, 126) 150%),
+    url(../images/witcher.jpg) no-repeat;
+  background-position: 50% 0;
+  background-size: cover;
+}
+
+.big-left > img {
+  float: left;
+  margin-top: 1em;
+  margin-left: 1em;
+  max-width: 50%;
+  min-width: 333px;
+  height: 112px;
 }
 
 header > div:nth-child(2) {
@@ -165,6 +191,24 @@ header > div:nth-child(2) {
   height: 100%;
 }
 
+.small-top-r {
+  background-color: black;
+  background:
+    linear-gradient(to top, transparent, rgb(71, 61, 163) 150%),
+    url(../images/galaxy.png) no-repeat;
+  background-position: 50% 0;
+  background-size: cover;
+}
+
+.small-top-r:hover {
+  background-color: rgb(68, 68, 68);
+  background:
+    linear-gradient(to top, transparent, rgb(45, 100, 126) 150%),
+    url(../images/galaxy.png) no-repeat;
+  background-position: 50% 0;
+  background-size: cover;
+}
+
 header > div:last-of-type {
   background-color: rgb(23, 11, 88);
   border: 1px solid black;
@@ -172,6 +216,24 @@ header > div:last-of-type {
   grid-column: 6/9;
   width: 100%;
   height: 100%;
+}
+
+.small-bot-r {
+  background-color: black;
+  background:
+    linear-gradient(to top, transparent, rgb(14, 12, 31) 150%),
+    url(../images/unity.jpg) no-repeat;
+  background-position: 50% 0;
+  background-size: cover;
+}
+
+.small-bot-r:hover {
+  background-color: rgb(68, 68, 68);
+  background:
+    linear-gradient(to top, transparent, rgb(86, 38, 109) 150%),
+    url(../images/unity.jpg) no-repeat;
+  background-position: 50% 0;
+  background-size: cover;
 }
 
 /* Parent */
