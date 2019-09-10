@@ -20,12 +20,10 @@ body {
   background: rgb(87, 83, 39);
   line-height: 1.4;
   margin: 0 auto;
-  /* height: 10000px; */
 }
 
 .nav-1 {
-  /* background: rgb(151, 139, 139); */
-  /* border: 1px solid black; */
+  background-color: #131313;
   display: flex;
   flex-flow: row wrap;
   height: 32px;
@@ -33,8 +31,6 @@ body {
 }
 
 .nav-box {
-  /* background-color: rgb(255, 253, 127);
-  border: 1px solid black; */
   display: flex;
   flex-flow: row wrap;
   height: 100%;
@@ -42,20 +38,45 @@ body {
 }
 
 .nav-box ul {
-  background-color: rgb(108, 194, 183);
-  /* border: 1px solid black; */
   height: 100%;
 }
 
 .left-list {
   float: left;
   margin-right: auto;
-  width: 90%;
+  width: 100%;
+}
+
+.left-list > li > a {
+  color: #555;
+  text-decoration: none;
+  font-family: ARS Maquette,Helvetica Neue,Arial,sans-serif;
+  font-size: 14px;
+  padding: 1%;
+}
+
+.left-list > li > a:hover {
+  cursor: pointer;
+  color: white;
 }
 
 .right-list {
-  width: 60%;
-  margin-left: auto;
+  float: right;
+  margin-left: 60%;
+  width: 100%;
+}
+
+.right-list > li > a {
+  color: #555;
+  text-decoration: none;
+  font-family: ARS Maquette,Helvetica Neue,Arial,sans-serif;
+  font-size: 14px;
+  padding: 1%;
+}
+
+.right-list > li > a:hover {
+  cursor: pointer;
+  color: white;
 }
 
 .right-list > li,
@@ -64,8 +85,6 @@ body {
 }
 
 .nav-2 {
-  background: rgb(108, 141, 194);
-  /* border: 1px solid black; */
   height: 78px;
   width: 100%;
 }
@@ -73,7 +92,6 @@ body {
 .sticky {
   display: flex;
   flex-direction: column;
-  /* padding-top: 60px; */
   position: fixed;
   top: 0;
 }
@@ -89,17 +107,33 @@ body {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color:lightgray;
+  background-color: lightgray;
 }
 
-.nav-2-box > ul > li {
+.nav-2-box > ul > li > a {
+  color: #555;
   float: left;
+  font-size: 13px;
+  padding: 1%;
+  text-decoration: none;
+}
+
+.nav-2-box > ul > li > a:hover {
+  color: black;
+  cursor: pointer;
 }
 
 .announcement {
   background-color: yellow;
   height: 28px;
+  padding: 0.3%;
   width: 100%;
+}
+
+.announce {
+  color: black; 
+  font-size: 15px;
+  text-decoration: none;
 }
 
 header {
