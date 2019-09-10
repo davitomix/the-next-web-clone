@@ -25,7 +25,7 @@ body {
 
 .nav-1 {
   /* background: rgb(151, 139, 139); */
-  border: 1px solid black;
+  /* border: 1px solid black; */
   display: flex;
   flex-flow: row wrap;
   height: 32px;
@@ -43,7 +43,7 @@ body {
 
 .nav-box ul {
   background-color: rgb(108, 194, 183);
-  border: 1px solid black;
+  /* border: 1px solid black; */
   height: 100%;
 }
 
@@ -65,7 +65,7 @@ body {
 
 .nav-2 {
   background: rgb(108, 141, 194);
-  border: 1px solid black;
+  /* border: 1px solid black; */
   height: 78px;
   width: 100%;
 }
@@ -775,5 +775,14 @@ footer {
 
   .legal {
     height: 123.5px;
+  }
+
+  .nav-1 {
+    display: none;
+  }
+
+  .nav-2 {
+    height: 78px;
+    position: fixed;
   }
 }
