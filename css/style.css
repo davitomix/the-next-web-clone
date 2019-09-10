@@ -17,7 +17,7 @@ html {
 }
 
 body {
-  background: rgb(87, 83, 39);
+  /* background: rgb(87, 83, 39); */
   line-height: 1.4;
   margin: 0 auto;
 }
@@ -137,8 +137,6 @@ body {
 }
 
 header {
-  background-color: salmon;
-  border: 1px solid black;
   display: grid;
   grid-gap: 10px;
   grid-template-rows: repeat(8, 1fr);
@@ -180,6 +178,43 @@ header > div:first-of-type {
   max-width: 50%;
   min-width: 333px;
   height: 112px;
+}
+
+.main-cover {
+  margin-top: 360px;
+  margin-left: 10px;
+}
+
+.cover-section > a {
+  color: white;
+  letter-spacing: 0.04em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.cover-title > a {
+  color: white;
+  letter-spacing: -.015em;
+  text-decoration: none;
+  font-size: 40px;
+  font-weight: bolder;
+}
+
+.cover-byline {
+  list-style-type: none;
+}
+
+.cover-byline > li {
+  float: left;
+  padding: 1%;
+}
+
+.cover-byline > li,
+.cover-byline > li > a,
+.cover-byline > li > i,
+.cover-byline > li > time {
+  color: #555;
+  text-decoration: none;
 }
 
 header > div:nth-child(2) {
