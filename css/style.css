@@ -304,12 +304,6 @@ main {
   grid-row: 3/4;
 }
 
-.blankbox {
-  background-color: rgb(105, 107, 221);
-  grid-column: 3/4;
-  grid-row: 3/4;
-}
-
 /* -------------------------------
   Deals Article
   Parent */
@@ -399,6 +393,13 @@ main {
     height: 458px;
   }
 
+  main {
+    min-width: 700px;
+    max-width: 1005px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .news {
     height: 836px;
   }
@@ -429,5 +430,51 @@ main {
 
   .b4f {
     display: none;
+  }
+
+  .categories {
+    height: calc(4 * 680px);
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+  }
+
+  .apps {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+
+  .gear {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+
+  .tech {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+
+  .creative {
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+
+  .podium {
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+
+  .insights {
+    grid-column: 2/3;
+    grid-row: 3/4;
+  }
+
+  .launch {
+    grid-column: 1/2;
+    grid-row: 4/5;
+  }
+
+  .distract {
+    grid-column: 2/3;
+    grid-row: 4/5;
   }
 }
