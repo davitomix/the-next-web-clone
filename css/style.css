@@ -62,8 +62,13 @@ body {
 
 .right-list {
   float: right;
-  margin-left: 60%;
   width: 100%;
+  margin-right: 10px;
+}
+
+.right-list > li {
+  float: right;
+  margin-left: 5px;
 }
 
 .right-list > li > a {
@@ -296,15 +301,15 @@ header > div:last-of-type {
 /* Parent */
 main {
   display: grid;
-  min-width: 1006px;
-  max-width: 1192px;
+  min-width: 970px;
+  max-width: 80%;
   margin-left: auto;
   margin-right: auto;
 }
 
 .news {
   margin: auto;
-  height: 573px;
+  height: 623px;
   width: 100%;
 }
 
@@ -332,7 +337,7 @@ main {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(3, 1fr);
-  grid-gap: 5px;
+  grid-gap: 10px;
 }
 
 .sub-news > div {
@@ -507,7 +512,7 @@ main {
   line-height: 1;
   margin: 0 !important;
   overflow: hidden;
-  padding: 10.6666666667px 16px 10.6666666667px 84px;
+  padding: 10.6666666667px 0 10.6666666667px 74px;
   text-overflow: ellipsis;
   text-decoration: none;
   white-space: nowrap;
@@ -548,17 +553,26 @@ main {
   width: 100%;
 }
 
+.third-box > ul {
+  background-color: rgb(255, 250, 248);
+  height: 41px;
+  width: 100%;
+}
+
+.third-box-list1 > li {
+  margin-top: 15px;
+}
+
 .third-box-list1 > li,
 .third-box-list2 > li {
   float: left;
-  margin-bottom: 1%;
-
+  margin-left: 15px;
 }
 
 .fourth-box {
   background-color: rgb(255, 250, 248);
   border-top: 1px solid rgb(255, 204, 195);
-  height: 68px;
+  height: 90px;
   width: 100%;
 }
 
@@ -566,9 +580,10 @@ main {
 
 .categories {
   width: 100%;
-  height: calc(3 * 680px);
+  height: calc(3 * 780px + 200px);
   background-color: rgb(44, 45, 105);
   display: grid;
+  grid-gap: 20px;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
 }
@@ -581,18 +596,21 @@ main {
   background-color: rgb(151, 153, 233);
   grid-column: 1/2;
   grid-row: 1/2;
+  margin-top: 100px;
 }
 
 .gear {
   background-color: rgb(151, 153, 233);
   grid-column: 2/3;
   grid-row: 1/2;
+  margin-top: 100px;
 }
 
 .tech {
   background-color: rgb(151, 153, 233);
   grid-column: 3/4;
   grid-row: 1/2;
+  margin-top: 100px;
 }
 
 .creative {
@@ -611,18 +629,21 @@ main {
   background-color: rgb(186, 187, 231);
   grid-column: 3/4;
   grid-row: 2/3;
+  margin-bottom: 100px;
 }
 
 .launch {
   background-color: rgb(105, 107, 221);
   grid-column: 1/2;
   grid-row: 3/4;
+  margin-bottom: 100px;
 }
 
 .distract {
   background-color: rgb(105, 107, 221);
   grid-column: 2/3;
   grid-row: 3/4;
+  margin-bottom: 100px;
 }
 
 /* -------------------------------
@@ -633,7 +654,8 @@ main {
   display: grid;
   grid-template-columns: repeat(8, 1fr);
   grid-template-rows: 4em repeat(2, 1fr);
-  height: 641px;
+  grid-gap: 10px;
+  height: 741px;
   width: 100%;
 }
 
@@ -677,24 +699,28 @@ main {
   border: 1px solid black;
   grid-column: 1/3;
   grid-row: 3/3;
+  margin-bottom: 50px;
 }
 
 .deal-6 {
   border: 1px solid black;
   grid-column: 3/5;
   grid-row: 3/3;
+  margin-bottom: 50px;
 }
 
 .deal-7 {
   border: 1px solid black;
   grid-column: 5/7;
   grid-row: 3/3;
+  margin-bottom: 50px;
 }
 
 .deal-8 {
   border: 1px solid black;
   grid-column: 7/9;
   grid-row: 3/3;
+  margin-bottom: 50px;
 }
 
 /* -------------------------------
