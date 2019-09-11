@@ -392,8 +392,8 @@ main {
 .fund {
   height: 391px;
   width: 100%;
-  background-color: lightseagreen;
   display: grid;
+  grid-gap: 10px;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(10, 1fr);
   margin-left: auto;
@@ -435,8 +435,7 @@ main {
 
 .fund > div:first-child,
 .fund > div:nth-child(2) {
-  background-color: rgb(211, 210, 209);
-  border: 1px solid black;
+  background-color: white;
 }
 
 .fund-header-left {
@@ -447,11 +446,6 @@ main {
 .fund-header-right {
   grid-column: 3/5;
   grid-row: 1/4;
-}
-
-.fund-content-subbox {
-  background-color: rgb(45, 223, 56);
-  border: 1px solid black;
 }
 
 .b1f {
@@ -574,6 +568,23 @@ main {
   border-top: 1px solid rgb(255, 204, 195);
   height: 90px;
   width: 100%;
+  padding: 2%;
+}
+
+.fourth-box > a {
+  border: 0;
+  color: #555;
+  font-size: 12px;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.fourth-box > a > span {
+  color: #aaa;
+  font-size: 100%;
+  vertical-align: baseline;
+  outline: none;
+  text-rendering: optimizeLegibility;
 }
 
 /* ------------------------------- */
@@ -597,6 +608,26 @@ main {
   grid-column: 1/2;
   grid-row: 1/2;
   margin-top: 100px;
+}
+
+.app-header {
+  background-color: white;
+  height: 70px;
+  width: 100%;
+}
+
+.app-img {
+  background:
+    transparent url(../images/sale_18751_primary_image.jpg) no-repeat;
+  background-position: 100% 100%;
+  background-size: cover;
+  height: 276px;
+  width: 100%;
+}
+
+.app-img > img {
+  height: 276px;
+  width: 100%;
 }
 
 .gear {
@@ -629,7 +660,6 @@ main {
   background-color: rgb(186, 187, 231);
   grid-column: 3/4;
   grid-row: 2/3;
-  margin-bottom: 100px;
 }
 
 .launch {
@@ -1008,6 +1038,7 @@ footer {
     grid-row: 12/16;
   }
 
+  /* parent */
   .categories {
     height: calc(8 * 856px);
     grid-template-columns: 1fr;
