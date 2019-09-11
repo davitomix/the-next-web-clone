@@ -311,7 +311,7 @@ main {
 .latest-news {
   display: inline-block;
   color: #f42;
-  font-size: 28px;
+  font-size: 25px;
   font-weight: 700;
   text-decoration: none;
   margin-left: 7px;
@@ -391,9 +391,42 @@ main {
   margin-right: auto;
 }
 
+.fund-h2 {
+  margin-top: 7%;
+}
+
+.fund-rigth-ul {
+  float: right;
+  margin-top: 9%;
+  margin-right: 1%;
+}
+
+.fund-rigth-ul > li {
+  display: inline;
+  color: #f42;
+  border-right: 1px solid #f42;
+  padding-right: 7px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.fund-rigth-ul > li:last-of-type {
+  border: 0;
+}
+
+.fund-rigth-ul > li > a {
+  text-decoration: none;
+  color: #f42;
+}
+
+.fund-rigth-ul > li > a:hover {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+
 .fund > div:first-child,
 .fund > div:nth-child(2) {
-  background-color: rgb(148, 137, 122);
+  background-color: rgb(211, 210, 209);
   border: 1px solid black;
 }
 
@@ -415,6 +448,30 @@ main {
 .b1f {
   grid-column: 1/2;
   grid-row: 4/11;
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.b1f > a {
+  min-width: 224.5px;
+  min-height: 96px;
+}
+
+.b1f > a > img {
+  top: 10px;
+  left: 10px;
+  max-width: 60px;
+  max-height: 60px;
+}
+
+.b1f > a > h4 {
+  float: right;
+  min-width: 226px;
+  min-height: 40px;
+}
+
+.b1f > a > div {
+  float: left;
 }
 
 .b2f {
