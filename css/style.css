@@ -90,6 +90,7 @@ body {
 }
 
 .nav-2 {
+  z-index: 1;
   height: 78px;
   width: 100%;
 }
@@ -603,32 +604,93 @@ main {
   border: 1px solid black;
 }
 
+/* father */
 .apps {
   background-color: rgb(151, 153, 233);
   grid-column: 1/2;
   grid-row: 1/2;
   margin-top: 100px;
+  display: grid;
+  grid-template-rows: 1fr 3fr 1fr 3fr;
 }
 
+/* childrens */
 .app-header {
   background-color: white;
-  height: 70px;
-  width: 100%;
+  /* height: 70px;
+  width: 100%; */
 }
 
 .app-img {
-  background:
-    transparent url(../images/sale_18751_primary_image.jpg) no-repeat;
+  background-color: rgb(190, 182, 182);
+  background: transparent url(../images/ab.jpg) no-repeat;
   background-position: 100% 100%;
   background-size: cover;
-  height: 276px;
+}
+
+.app-img > h5,
+.app-img > h2,
+.app-img > ul {
+  float: left;
+  margin-left: 5%;
+}
+
+.app-img > h5 {
+  margin-top: 45%;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 700;
+  color: white;
+}
+
+.app-img > h2 {
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 700;
+  color: white;
+}
+
+.app-img > h2 > a {
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 700;
+  color: white;
+  text-decoration: none;
+}
+
+.app-img > h2 > a:hover {
+  text-decoration: underline;
+}
+
+.app-img > ul {
   width: 100%;
 }
 
-.app-img > img {
-  height: 276px;
-  width: 100%;
+.c-i-app > li {
+  display: inline;
+  font-size: 15px;
+  font-weight: 500;
+  color: rgb(199, 198, 198);
 }
+
+.c-i-app > li > a {
+  text-decoration: none;
+  color: rgb(199, 198, 198);
+}
+
+.c-i-app > li > a:hover {
+  color: rgb(255, 255, 255);
+}
+
+.app-latest {
+  background-color: rgb(165, 122, 122);
+}
+
+.app-list {
+  background-color: rgb(182, 97, 97);
+}
+
+/* -----------------------------------  */
 
 .gear {
   background-color: rgb(151, 153, 233);
