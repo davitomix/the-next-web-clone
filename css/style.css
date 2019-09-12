@@ -352,7 +352,7 @@ main {
 }
 
 .news-items > div {
-  width: 100%;
+  max-width: 248.89px;
 }
 
 .news-items > div:nth-child(2) {
@@ -361,7 +361,7 @@ main {
 
 .news-items > div > img {
   height: 140px;
-  width: 289px;
+  width: 248.89px;
 }
 
 .story-byline {
@@ -606,7 +606,6 @@ main {
 
 /* father */
 .apps {
-  background-color: rgb(151, 153, 233);
   grid-column: 1/2;
   grid-row: 1/2;
   margin-top: 100px;
@@ -683,11 +682,65 @@ main {
 }
 
 .app-latest {
-  background-color: rgb(165, 122, 122);
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+}
+
+.cat-left {
+  background-color: rgb(255, 244, 242);
+  color: rgb(255, 68, 34);
+  grid-column: 1/8;
+  height: 100%;
+  padding: 5px;
+  width: 100%;
+}
+
+.cat-left > h5 {
+  color: #f42;
+  font-size: 12px;
+  font-family: Shentox,sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: .04em;
+  line-height: 1.5;
+}
+
+.headline {
+  color: #f42;
+  font-size: 12px;
+  font-family: Shentox,sans-serif;
+  font-weight: 900;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.headline:hover {
+  text-decoration: underline dotted #f42;
+}
+
+.cat-right {
+  grid-column: 8/11;
+  height: 100%;
+  width: 100%;
+}
+
+.cat-right img {
+  height: 96px;
+  weight: 96px;
 }
 
 .app-list {
-  background-color: rgb(182, 97, 97);
+  background-color: white;
+}
+
+.app-list > ul > li {
+  list-style-type: disc;
+}
+
+.app-list > ul > li > a {
+  color: #000;
+  padding: 10px 0 15px 14px;
+  text-decoration: none;
 }
 
 /* -----------------------------------  */
