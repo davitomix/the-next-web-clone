@@ -302,15 +302,15 @@ header > div:last-of-type {
 /* Parent */
 main {
   display: grid;
-  min-width: 970px;
+  min-width: 1008px;
   /* max-width: 80%; */
-  max-width: 50%;
+  max-width: 85%;
   margin-left: auto;
   margin-right: auto;
 }
 
 .news {
-  margin: auto;
+  /* margin: auto; */
   height: 623px;
   width: 100%;
 }
