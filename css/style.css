@@ -179,6 +179,9 @@ header > div:first-of-type {
     url(../images/witcher.jpg) no-repeat;
   background-position: 50% 0;
   background-size: cover;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
 }
 
 .big-left:hover {
@@ -191,7 +194,6 @@ header > div:first-of-type {
 }
 
 .big-left > img {
-  float: left;
   margin-top: 1em;
   margin-left: 1em;
   max-width: 50%;
@@ -202,10 +204,10 @@ header > div:first-of-type {
 /* top big box */
 
 .main-cover {
-  margin-top: 23.5em;
-  margin-left: 10px;
   max-width: 100%;
-  min-width: 569px;
+  margin-left: 1em;
+  display: flex;
+  flex-flow: column wrap;
 }
 
 .cover-section > a {
@@ -223,13 +225,13 @@ header > div:first-of-type {
   font-weight: bolder;
 }
 
-.cover-byline {
-  list-style-type: none;
+.cover-byline > li {
+  display: inline;
+  padding: 5px;
 }
 
-.cover-byline > li {
-  float: left;
-  padding: 1%;
+.cover-byline > li:first-of-type {
+  padding: 0;
 }
 
 .cover-byline > li,
@@ -243,11 +245,9 @@ header > div:first-of-type {
 /* top right box */
 
 .second-cover {
-  margin-top: 9em;
   margin-left: 1em;
-  max-width: 50%;
+  max-width: 100%;
   min-width: 333px;
-  height: 112px;
 }
 
 .cover-title-2 > a {
@@ -645,7 +645,7 @@ main {
 .cat-img > h2,
 .cat-img > ul {
   position: relative;
-  bottom: -60%;
+  bottom: -55%;
   margin-left: 10px;
 }
 
@@ -1151,7 +1151,7 @@ footer {
 ------------------------------------------------------------- */
 @media only screen and (max-width: 1024px) {
   header {
-    height: 458px;
+    height: 370px;
   }
 
   main {
@@ -1161,12 +1161,21 @@ footer {
     margin-right: auto;
   }
 
+  .big-left > img {
+    display: none;
+  }
+
+  .big-left {
+    display: flex;
+    align-items: flex-end;
+  }
+
   .main-cover {
-    margin-top: 17em;
+    margin-top: 0;
   }
 
   .second-cover {
-    margin-top: 6em;
+    margin-top: 0;
   }
 
   .news {
@@ -1217,7 +1226,6 @@ footer {
   }
 
   .categories {
-    height: calc(4 * 680px);
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(4, 1fr);
   }
@@ -1265,7 +1273,6 @@ footer {
   .deals {
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: 4em repeat(6, 1fr);
-    height: 1000px;
   }
 
   .deal-header-left {
