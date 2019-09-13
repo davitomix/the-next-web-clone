@@ -130,6 +130,18 @@ body {
   cursor: pointer;
 }
 
+.fa-search {
+  border: 1px solid darkgrey;
+  color: rgb(133, 133, 133);
+  float: right;
+  padding: 8px;
+}
+
+.fa-search:hover {
+  cursor: pointer;
+  color: black;
+}
+
 .announcement {
   background-color: yellow;
   height: 28px;
@@ -611,9 +623,8 @@ main {
 .apps {
   grid-column: 1/2;
   grid-row: 1/2;
-  margin-top: 100px;
   display: grid;
-  grid-template-rows: 1fr 3fr 1fr 3fr;
+  grid-template-rows: 0.5fr 2fr 0.5fr 3fr;
 }
 
 /* childrens */
@@ -634,7 +645,7 @@ main {
 .cat-img > h2,
 .cat-img > ul {
   position: relative;
-  bottom: -69%;
+  bottom: -60%;
   margin-left: 10px;
 }
 
@@ -694,7 +705,7 @@ main {
 .cat-left {
   background-color: rgb(255, 244, 242);
   color: rgb(255, 68, 34);
-  grid-column: 1/9;
+  grid-column: 1/8;
   height: 100%;
   padding: 5px;
   width: 100%;
@@ -724,7 +735,7 @@ main {
 }
 
 .cat-right {
-  grid-column: 9/11;
+  grid-column: 8/11;
   height: 100%;
   width: 100%;
 }
@@ -770,9 +781,8 @@ main {
   background-color: rgb(151, 153, 233);
   grid-column: 2/3;
   grid-row: 1/2;
-  margin-top: 100px;
   display: grid;
-  grid-template-rows: 1fr 3fr 1fr 3fr;
+  grid-template-rows: 0.5fr 2fr 0.5fr 3fr;
 }
 
 .gear-image {
@@ -786,9 +796,8 @@ main {
   background-color: rgb(151, 153, 233);
   grid-column: 3/4;
   grid-row: 1/2;
-  margin-top: 100px;
   display: grid;
-  grid-template-rows: 1fr 3fr 1fr 3fr;
+  grid-template-rows: 0.5fr 2fr 0.5fr 3fr;
 }
 
 .tech-image {
@@ -803,7 +812,7 @@ main {
   grid-column: 1/2;
   grid-row: 2/3;
   display: grid;
-  grid-template-rows: 1fr 3fr 1fr 3fr;
+  grid-template-rows: 0.5fr 2fr 0.5fr 3fr;
 }
 
 .creative-image {
@@ -818,7 +827,7 @@ main {
   grid-column: 2/3;
   grid-row: 2/3;
   display: grid;
-  grid-template-rows: 1fr 3fr 1fr 3fr;
+  grid-template-rows: 0.5fr 2fr 0.5fr 3fr;
 }
 
 .podium-image {
@@ -833,7 +842,7 @@ main {
   grid-column: 3/4;
   grid-row: 2/3;
   display: grid;
-  grid-template-rows: 1fr 3fr 1fr 3fr;
+  grid-template-rows: 0.5fr 2fr 0.5fr 3fr;
 }
 
 .insights-image {
@@ -847,9 +856,9 @@ main {
   background-color: rgb(105, 107, 221);
   grid-column: 1/2;
   grid-row: 3/4;
-  margin-bottom: 100px;
+  margin-bottom: 25px;
   display: grid;
-  grid-template-rows: 1fr 3fr 1fr 3fr;
+  grid-template-rows: 0.5fr 2fr 0.5fr 3fr;
 }
 
 .launch-image {
@@ -863,9 +872,9 @@ main {
   background-color: rgb(105, 107, 221);
   grid-column: 2/3;
   grid-row: 3/4;
-  margin-bottom: 100px;
+  margin-bottom: 25px;
   display: grid;
-  grid-template-rows: 1fr 3fr 1fr 3fr;
+  grid-template-rows: 0.5fr 2fr 0.5fr 3fr;
 }
 
 .distract-image {
@@ -1152,6 +1161,14 @@ footer {
     margin-right: auto;
   }
 
+  .main-cover {
+    margin-top: 17em;
+  }
+
+  .second-cover {
+    margin-top: 6em;
+  }
+
   .news {
     height: 836px;
   }
@@ -1166,9 +1183,24 @@ footer {
     grid-row: 1/3;
   }
 
+  .latest-news {
+    /* display: inline-block;
+    color: #f42;
+    font-size: 25px;
+    font-weight: 700;
+    text-decoration: none; */
+    margin-left: 0px;
+    margin-top: 3px;
+  }
+
   .fund-header-right {
     grid-column: 1/5;
     grid-row: 3/5;
+  }
+
+  .fund-rigth-ul {
+    float: left;
+    margin-top: 1%;
   }
 
   .fund {
