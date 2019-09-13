@@ -303,17 +303,17 @@ header > div:last-of-type {
 /* Parent */
 main {
   display: grid;
-  min-width: 1008px;
-  /* max-width: 80%; */
-  max-width: 85%;
-  margin-left: auto;
-  margin-right: auto;
+  justify-content: center;
+  padding: 0 20px;
 }
 
 .news {
   /* margin: auto; */
   height: 623px;
-  width: 100%;
+  width: 95%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .latest-news {
@@ -354,7 +354,7 @@ main {
 }
 
 .news-items > div {
-  max-width: 248.89px;
+  max-width: 100%;
 }
 
 .news-items > div:nth-child(2) {
@@ -363,7 +363,7 @@ main {
 
 .news-items > div > img {
   height: 140px;
-  width: 248.89px;
+  width: 100%;
 }
 
 .story-byline {
@@ -394,13 +394,13 @@ main {
   Parent */
 .fund {
   height: 391px;
-  width: 100%;
+  width: 95%;
+  max-width: 1200px;
+  margin: auto;
   display: grid;
   grid-gap: 10px;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(10, 1fr);
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .fund-h2 {
@@ -594,12 +594,13 @@ main {
 
 .categories {  
   background-color: rgb(44, 45, 105);
+  width: 95%;
+  max-width: 1200px;
   display: grid;
   grid-gap: 20px;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
-  height: 100%
-  width: 100%;
+  margin: auto;
 }
 
 .categories > div {
@@ -633,7 +634,7 @@ main {
 .cat-img > h2,
 .cat-img > ul {
   position: relative;
-  bottom: -71%;
+  bottom: -69%;
   margin-left: 10px;
 }
 
@@ -646,7 +647,7 @@ main {
 
 .cat-img > h2 {
   text-transform: uppercase;
-  min-width: 306px;
+  /* min-width: 300px; */
   max-width: 409px;
   font-size: 18px;
   font-weight: 700;
@@ -883,7 +884,9 @@ main {
   grid-template-columns: repeat(8, 1fr);
   grid-template-rows: 4em repeat(2, 1fr);
   grid-gap: 10px;
-  width: 100%;
+  width: 95%;
+  max-width: 1200px;
+  margin: auto;
 }
 
 .deal-header-left {
@@ -947,7 +950,7 @@ main {
 .title-deal > h2 {
   font-family: 'Arimo', sans-serif;
   color: rgb(0, 0, 0);
-  font-size: 18px;
+  font-size: 1.2em;
   font-weight: bold;
 }
 
@@ -1059,6 +1062,10 @@ footer {
 
 .share-social > ul > li {
   float: left;
+  display: flex;
+  justify-content: center;
+  margin-left: 9px;
+  margin-right: 9px;
 }
 
 .btn {
@@ -1076,13 +1083,63 @@ footer {
 	background-color: #131313;
 }
 
+.share-list {
+  background-color: rgb(160, 92, 92);
+  display: flex;
+  justify-content: center;
+  height: 50px;
+  text-align: center;
+}
+
+.share-list ul{
+  margin-top: 15px;
+}
+
+.share-list ul > li {
+  display: inline;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-family: 'Arimo', sans-serif;
+  text-transform: uppercase;
+  font-size: 13px;
+  color: #fff;
+}
+
+.share-list ul > li > a {
+  color: #aaa;
+  text-decoration: none;
+}
+
+.share-list ul > li > a:hover {
+  color: #fff;
+}
 
 .legal {
   background-color: black;
   height: 97.5px;
   width: 100%;
+	color: #aaa;
+	font-size: 13px;
+	margin: 0;
+	padding: 40px;
+	text-align: center;
 }
 
+.legal span img {
+	display: inline-block;
+	height: 9px;
+	margin-right: 1px;
+	vertical-align: baseline;
+}
+
+.legal > span > b {
+	color: red;
+}
+
+
+/* ------------------------------------------------------------
+  MEDIA  QUERY MID SIZE INIT
+------------------------------------------------------------- */
 @media only screen and (max-width: 1024px) {
   header {
     height: 458px;
