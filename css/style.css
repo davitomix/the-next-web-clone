@@ -204,10 +204,11 @@ header > div:first-of-type {
 /* top big box */
 
 .main-cover {
-  max-width: 100%;
-  margin-left: 1em;
   display: flex;
   flex-flow: column wrap;
+  margin-bottom: 1em;
+  margin-left: 1em;
+  max-width: 100%;
 }
 
 .cover-section > a {
@@ -245,9 +246,9 @@ header > div:first-of-type {
 /* top right box */
 
 .second-cover {
-  margin-left: 1em;
   max-width: 100%;
-  min-width: 333px;
+  margin-bottom: 1em;
+  margin-left: 1em;
 }
 
 .cover-title-2 > a {
@@ -268,12 +269,15 @@ header > div:nth-child(2) {
 }
 
 .small-top-r {
+  align-items: flex-end;
   background-color: black;
   background:
     linear-gradient(to top, transparent, rgb(71, 61, 163) 150%),
     url(../images/galaxy.png) no-repeat;
   background-position: 50% 0;
   background-size: cover;
+  display: flex;
+  flex-flow: row wrap;
 }
 
 .small-top-r:hover {
@@ -295,12 +299,15 @@ header > div:last-of-type {
 }
 
 .small-bot-r {
+  align-items: flex-end;
   background-color: black;
   background:
     linear-gradient(to top, transparent, rgb(14, 12, 31) 150%),
     url(../images/ab.jpg) no-repeat;
   background-position: 50% 0;
   background-size: cover;
+  display: flex;
+  flex-flow: row wrap;
 }
 
 .small-bot-r:hover {
@@ -1328,8 +1335,6 @@ footer {
   }
 }
 
-
-
 @media only screen and (max-width: 767px) {
   header {
     grid-gap: 0;
@@ -1368,6 +1373,23 @@ footer {
     max-width: 749px;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .cover {
+    margin-top: 10%;
+  }
+
+  .big-left > img {
+    display: none;
+  }
+
+  .main-cover {
+    margin-top: 10%;
+    margin-right: 50%;
+  }
+
+  .cover-title > a {
+    font-size: 20px;
   }
 
   .news {
