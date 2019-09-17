@@ -113,7 +113,6 @@ body {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  /* overflow: hidden; */
   background-color: lightgray;
 }
 
@@ -128,6 +127,14 @@ body {
 .nav-2-box > ul > li > a:hover {
   color: black;
   cursor: pointer;
+}
+
+.logo-img {
+  display: none;
+}
+
+.mobile-view-nav {
+  display: none;
 }
 
 .fa-search {
@@ -957,7 +964,6 @@ footer {
 }
 
 .share-social {
-  background-color: white;
   display: flex;
   justify-content: center;
   height: 50px;
@@ -994,7 +1000,6 @@ footer {
 }
 
 .share-list {
-  background-color: rgb(160, 92, 92);
   display: flex;
   justify-content: center;
   height: 50px;
@@ -1061,6 +1066,16 @@ footer {
     margin-left: auto;
     margin-right: auto;
     justify-content: center;
+  }
+
+  .logo-img {
+    display: inline-block;
+    float: left;
+  }
+
+  .logo-img > img {
+    height: 50px;
+    width: 50px;
   }
 
   .big-left {
@@ -1192,8 +1207,30 @@ footer {
     height: 100%;
   }
 
-  .menu > li {
-    /* display: none; */
+  .menu {
+    display: none;
+  }
+
+  .search-glass {
+    display: none;
+  }
+
+  .mobile-view-nav {
+    display: inline;
+  }
+
+  .fa-bars,
+  .fa-search {
+    border: 1px solid darkgrey;
+    color: rgb(133, 133, 133);
+    float: right;
+    padding: 8px;
+  }
+
+  .fa-bars:hover,
+  .fa-search:hover {
+    cursor: pointer;
+    color: black;
   }
 
   .announcement {
@@ -1251,31 +1288,18 @@ footer {
     padding: 0 10px;
   }
 
-  /* .news {
-    height: 790px;
-  } */
-
   .sub-news {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(8, 1fr);
     grid-gap: 0;
-    /* max-width: 707px; */
     margin-left: auto;
     margin-right: auto;
-  }
-
-  .sub-news > div {
-    /* max-height: 82px; */
-    /* height: calc(560px / 8); */
   }
 
   .news-items {
     display: grid;
     grid-template-columns: 1fr 6fr;
     grid-gap: 10px;
-  }
-
-  .news-items > div:first-of-type {
   }
 
   .news-items > div > img {
@@ -1347,8 +1371,8 @@ footer {
   }
 
   .cat-right img {
-    height: 96px;
-    width: 96px;
+    height: 100%;
+    width: 100%;
   }
 
   .cat-left {
