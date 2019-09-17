@@ -1078,6 +1078,10 @@ footer {
     width: 50px;
   }
 
+  .logo-img > img:hover {
+    cursor: pointer;
+  }
+
   .big-left {
     display: flex;
     flex-flow: column wrap;
@@ -1235,7 +1239,7 @@ footer {
 
   .announcement {
     overflow: hidden;
-    font-size: 10px
+    font-size: 10px;
   }
 
   .cover {
@@ -1363,20 +1367,27 @@ footer {
 
   .cat-latest {
     display: grid;
-    grid-template-columns: repeat(14, 1fr);
+    grid-template-columns: 1fr 1fr;
+    min-height: 101.7px;
   }
 
   .cat-right {
-    grid-column: 13/15;
+    float: right;
   }
 
   .cat-right img {
-    height: 100%;
-    width: 100%;
+    min-height: 101.7px;
+    width: 96px;
   }
 
   .cat-left {
-    grid-column: 1/13;
+    float: left;
+  }
+
+  .cat-left > a {
+    font-size: 10px;
+    /* font-weight: 500; */
+    line-height: 2pt;
   }
 
   .app-image {
@@ -1432,6 +1443,10 @@ footer {
     height: 160px;
   }
 
+  .share-list > ul > li {
+    font-size: 12px;
+  }
+
   .legal {
     height: 123.5px;
   }
@@ -1443,5 +1458,13 @@ footer {
   .nav-2 {
     height: 78px;
     position: fixed;
+  }
+}
+
+@media only screen and (max-width: 325px) {
+  .cat-left > a {
+    font-size: 8px;
+    /* font-weight: 500; */
+    line-height: 2pt;
   }
 }
