@@ -49,7 +49,7 @@ body {
 }
 
 .left-list > li > a {
-  color: #555;  
+  color: #555;
   font-family: ARS Maquette, Helvetica, Neue, Arial, sans-serif;
   font-size: 14px;
   padding: 1%;
@@ -113,7 +113,7 @@ body {
   background-color: lightgray;
   list-style-type: none;
   margin: 0;
-  padding: 0;  
+  padding: 0;
 }
 
 .nav-2-box > ul > li > a {
@@ -161,6 +161,7 @@ body {
   font-size: 15px;
   text-decoration: none;
 }
+
 /* #endregion */
 
 /* #region header */
@@ -168,7 +169,7 @@ header {
   display: grid;
   grid-gap: 10px;
   grid-template-rows: repeat(8, 1fr);
-  grid-template-columns: repeat(8, 1fr);  
+  grid-template-columns: repeat(8, 1fr);
   height: 550px;
   width: 100%;
 }
@@ -331,14 +332,15 @@ header > div:last-of-type {
 
 /* #endregion */
 
-/* Parent */
+/* #region main */
+
 main {
   display: grid;
   justify-content: center;
   padding: 0 20px;
 }
 
-.news {  
+.news {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
@@ -349,7 +351,7 @@ main {
   display: inline-block;
   color: #f42;
   font-size: 25px;
-  font-weight: 700;  
+  font-weight: 700;
   margin-left: 0;
   margin-top: 14px;
   margin-bottom: 10px;
@@ -447,12 +449,12 @@ main {
   border: 0;
 }
 
-.fund-rigth-ul > li > a {  
+.fund-rigth-ul > li > a {
   color: #f42;
   text-decoration: none;
 }
 
-.fund-rigth-ul > li > a:hover {  
+.fund-rigth-ul > li > a:hover {
   color: rgb(0, 0, 0);
   text-decoration: none;
 }
@@ -516,8 +518,8 @@ main {
 }
 
 .first-box > h2 > a {
-  color:#fff;
-  font-family: Avalon,sans-serif;
+  color: #fff;
+  font-family: Avalon, sans-serif;
   font-size: 18px;
   font-weight: bolder;
   line-height: 1;
@@ -548,7 +550,7 @@ main {
   font-size: 12px;
   font-family: Shentox, sans-serif;
   font-weight: 500;
-  letter-spacing: .04em;
+  letter-spacing: 0.04em;
   line-height: 1.5;
   margin: 0;
   opacity: 0.5;
@@ -596,7 +598,7 @@ main {
 
 .fourth-box > a > span {
   color: #aaa;
-  font-size: 100%;  
+  font-size: 100%;
   outline: none;
   text-rendering: optimizeLegibility;
   vertical-align: baseline;
@@ -604,7 +606,7 @@ main {
 
 /* ------------------------------- */
 
-.categories {  
+.categories {
   display: grid;
   grid-gap: 20px;
   grid-template-columns: repeat(3, 1fr);
@@ -613,7 +615,6 @@ main {
   max-width: 1200px;
   width: 95%;
 }
-
 
 /* father */
 .apps {
@@ -643,10 +644,10 @@ main {
 }
 
 .cat-img > div > h5 {
-  color: white;  
+  color: white;
   font-size: 12px;
   font-weight: 700;
-  text-transform: uppercase;  
+  text-transform: uppercase;
 }
 
 .cat-img > div > h2 {
@@ -658,7 +659,7 @@ main {
 }
 
 .cat-img > div > h2 > a {
-  color: white;  
+  color: white;
   font-size: 18px;
   font-weight: 700;
   text-transform: uppercase;
@@ -677,7 +678,7 @@ main {
   color: rgb(199, 198, 198);
   display: inline;
   font-size: 15px;
-  font-weight: 500;  
+  font-weight: 500;
 }
 
 .c-i-app > li > a {
@@ -925,6 +926,8 @@ main {
   padding: 10px;
 }
 
+/* #endregion */
+
 /* -------------------------------
   Footer
   Parent */
@@ -960,7 +963,7 @@ footer {
   border-radius: 50%;
   color: #fff;
   cursor: pointer;
-  margin: 0px 0.3%;
+  margin: 0 0.3%;
   width: 33px;
   height: 33px;
   padding: 6px;
@@ -971,7 +974,7 @@ footer {
 }
 
 .share-list {
-  display: flex;  
+  display: flex;
   height: 50px;
   justify-content: center;
   text-align: center;
@@ -1022,7 +1025,6 @@ footer {
   color: red;
 }
 
-
 /* ------------------------------------------------------------
   MEDIA  QUERY MID SIZE INIT
 ------------------------------------------------------------- */
@@ -1036,7 +1038,7 @@ footer {
     min-width: 700px;
     max-width: 1005px;
     margin-left: auto;
-    margin-right: auto;    
+    margin-right: auto;
   }
 
   .logo-img {
@@ -1057,7 +1059,7 @@ footer {
     align-content: flex-end;
     display: flex;
     flex-flow: column wrap;
-    justify-content: space-between;    
+    justify-content: space-between;
   }
 
   .main-cover {
@@ -1245,7 +1247,7 @@ footer {
 
   header > div:last-of-type {
     grid-column: 1/4;
-    grid-row: 3/4;    
+    grid-row: 3/4;
     height: 100%;
     width: 100%;
   }
