@@ -183,10 +183,10 @@ header > div:first-of-type {
 }
 
 .big-left {
-  background-color: black;
   background:
     linear-gradient(to top, transparent, rgb(163, 71, 61) 150%),
     url(../images/witcher.jpg) no-repeat;
+  background-color: black;
   background-position: 50% 0;
   background-size: cover;
   display: flex;
@@ -194,11 +194,11 @@ header > div:first-of-type {
   justify-content: space-between;
 }
 
-.big-left:hover {
-  background-color: rgb(68, 68, 68);
+.big-left:hover {  
   background:
     linear-gradient(to top, transparent, rgb(45, 100, 126) 150%),
     url(../images/witcher.jpg) no-repeat;
+  background-color: rgb(68, 68, 68);
   background-position: 50% 0;
   background-size: cover;
 }
@@ -281,10 +281,10 @@ header > div:nth-child(2) {
 
 .small-top-r {
   align-items: flex-end;
-  background-color: black;
   background:
     linear-gradient(to top, transparent, rgb(71, 61, 163) 150%),
     url(../images/galaxy.png) no-repeat;
+  background-color: black;
   background-position: 50% 0;
   background-size: cover;
   display: flex;
@@ -292,10 +292,10 @@ header > div:nth-child(2) {
 }
 
 .small-top-r:hover {
-  background-color: rgb(68, 68, 68);
   background:
     linear-gradient(to top, transparent, rgb(45, 100, 126) 150%),
     url(../images/galaxy.png) no-repeat;
+  background-color: rgb(68, 68, 68);
   background-position: 50% 0;
   background-size: cover;
 }
@@ -311,10 +311,10 @@ header > div:last-of-type {
 
 .small-bot-r {
   align-items: flex-end;
-  background-color: black;
   background:
     linear-gradient(to top, transparent, rgb(14, 12, 31) 150%),
     url(../images/ab.jpg) no-repeat;
+  background-color: black;
   background-position: 50% 0;
   background-size: cover;
   display: flex;
@@ -322,10 +322,10 @@ header > div:last-of-type {
 }
 
 .small-bot-r:hover {
-  background-color: rgb(68, 68, 68);
   background:
     linear-gradient(to top, transparent, rgb(86, 38, 109) 150%),
     url(../images/ab.jpg) no-repeat;
+  background-color: rgb(68, 68, 68);
   background-position: 50% 0;
   background-size: cover;
 }
@@ -629,9 +629,9 @@ main {
   background-color: white;
 }
 
-.app-image {
-  background-color: rgb(190, 182, 182);
+.app-image {  
   background: transparent url(../images/ab.jpg) no-repeat;
+  background-color: rgb(190, 182, 182);
   background-position: 100% 100%;
   background-size: cover;
   display: grid;
@@ -779,8 +779,8 @@ main {
 }
 
 .gear-image {
-  background-color: rgb(190, 182, 182);
   background: transparent url(../images/Apple-tag-796x418.jpg) no-repeat;
+  background-color: rgb(190, 182, 182);
   background-position: 50% 50%;
   background-size: cover;
   display: grid;
@@ -800,9 +800,9 @@ main {
   grid-template-rows: 0.5fr 2fr 0.5fr 3fr;
 }
 
-.tech-image {
-  background-color: rgb(190, 182, 182);
+.tech-image {  
   background: transparent url(../images/OnePlus-7-514x270.jpg) no-repeat;
+  background-color: rgb(190, 182, 182);
   background-position: 20% 20%;
   background-size: cover;
   display: grid;
@@ -823,8 +823,8 @@ main {
 }
 
 .creative-image {
-  background-color: rgb(190, 182, 182);
   background: transparent url(../images/Smart-House-405x270.jpg) no-repeat;
+  background-color: rgb(190, 182, 182);
   background-position: 20% 20%;
   background-size: cover;
   display: grid;
@@ -844,9 +844,9 @@ main {
   grid-template-rows: 0.5fr 2fr 0.5fr 3fr;
 }
 
-.podium-image {
-  background-color: rgb(190, 182, 182);
+.podium-image {  
   background: transparent url(../images/sale_18296_primary_image.jpg) no-repeat;
+  background-color: rgb(190, 182, 182);
   background-position: 20% 20%;
   background-size: cover;
   display: grid;
@@ -866,9 +866,9 @@ main {
   grid-template-rows: 0.5fr 2fr 0.5fr 3fr;
 }
 
-.insights-image {
-  background-color: rgb(190, 182, 182);
+.insights-image {  
   background: transparent url(../images/Stadia-black-hed.jpg) no-repeat;
+  background-color: rgb(190, 182, 182);
   background-position: 50% 100%;
   background-size: cover;
   display: grid;
@@ -889,9 +889,9 @@ main {
   grid-template-rows: 0.5fr 2fr 0.5fr 3fr;
 }
 
-.launch-image {
-  background-color: rgb(190, 182, 182);
+.launch-image {  
   background: transparent url(../images/MK-11-368x276.jpg) no-repeat;
+  background-color: rgb(190, 182, 182);
   background-position: 50% 100%;
   background-size: cover;
   display: grid;
@@ -913,8 +913,8 @@ main {
 }
 
 .distract-image {
-  background-color: rgb(190, 182, 182);
   background: transparent url(../images/sale_17183_primary_image.jpg) no-repeat;
+  background-color: rgb(190, 182, 182);
   background-position: 50% 100%;
   background-size: cover;
   display: grid;
