@@ -1,148 +1,906 @@
 <!DOCTYPE html>
 <html lang="en">
+    <!-- #region head -->
     <head>
             <meta charset="UTF-8">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <meta http-equiv="X-UA-Compatible" content="ie=edge">
             <link rel="stylesheet" type="text/css" href="css/reset.css">
             <link rel="stylesheet" type="text/css" href="css/style.css">
+            <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css">
             <link rel="shortcut icon" href="https://static01.nyt.com/favicon.ico" />
             <title>The Next Web Clone</title>
     </head>
+    <!-- #endregion -->
     <body>
+        <!-- #region nav-1 -->
         <nav class="nav-1">
             <div class="nav-box">
 							<ul class="left-list">
 								<li><a href="#">News</a></li>
-								<li>
-										<select>
-												<option value="Events"><a href="#">Events</a></option>
-												<option value="Hard Fork Summit">Hard Fork Summit</option>
-												<option value="TNW 2020">TNW 2020</option>
-										</select>                    
-								</li>
+								<li><a href="#">Events</a></li>
 								<li><a href="#">Business</a></li>
 								<li><a href="#">AMAs</a></li>
 								<li><a href="#">Spaces</a></li>
 								<li><a href="#">Terms and conditions</a></li>
 							</ul>
             </div>
+            <!-- #endregion -->
+            <!-- #region nav-box -->
             <div class="nav-box">
-								<ul class="right-list">
-									<li><a href="#">About</a></li>
-									<li><a href="#">Team</a></li>
-									<li><a href="#">Advertise</a></li>
-									<li><a href="#">Jobs</a></li>
-									<li><a href="#">Contact</a></li>
-								</ul>
+				<ul class="right-list">
+					<li><a href="#">About</a></li>
+					<li><a href="#">Team</a></li>
+					<li><a href="#">Advertise</a></li>
+					<li><a href="#">Jobs</a></li>
+                    <li><a href="#">Contact</a></li>                    
+				</ul>
             </div>
+            <!-- #endregion -->
         </nav>
+        <!-- #region nav-2 -->
         <nav class="nav-2" id="sticky-nav">
             <div class="nav-2-box" >
+                <div class="logo-img">
+                    <img src="images/TNWicon.jpg" alt="tnw icon">
+                </div>
                 <ul>
-                    <li><a href="" class="hello1">LATEST</a></li>
-                    <li><a href="" class="hello2">HARD FORK</a></li>
-                    <li><a href="" class="hello3">PLUGGED</a></li>
-                    <li><a href="" class="hello4">FUNDAMENTALS</a></li>
-                    <li><a href="" class="hello5">WORK 2030</a></li>
+                    <li><a href="" class="menu">LATEST</a></li>
+                    <li><a href="" class="menu">HARD FORK</a></li>
+                    <li><a href="" class="menu">PLUGGED</a></li>
+                    <li><a href="" class="menu">FUNDAMENTALS</a></li>
+                    <li><a href="" class="menu">WORK 2030</a></li>
                 </ul>
+                <div class="search-glass">
+                    <i class="fas fa-search fa-2x"></i>
+                </div>
+                <div class='mobile-view-nav'>
+                    <span class="search">
+                        <i class="fas fa-search fa-2x"></i>
+                    </span>
+                    <span class="burger">
+                        <i class="fas fa-bars fa-2x"></i>
+                    </span>
+                </div>                
             </div>
 
-            <a href="#"><div class="announcement">
-                Say hi to TNW at Hard Fork Summit on October 15-17 in Amsterdam →
+            <a class = "announce" href="#"><div class="announcement">
+                <p>Say hi to TNW at Hard Fork Summit on October 15-17 in Amsterdam →<p></p>
             </div></a>
-				</nav>
+        </nav>
+        <!-- #endregion -->
+        <!-- #region header -->
         <header class="cover">
-            <div>big-left</div>
-            <div>small-top-right</div>
-            <div>small-bottom-right</div>
+            <div class="big-left">
+                <img class="cover-logo" alt="The Next Web" 
+                src="https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/tnw.svg" />
+                <div class="main-cover">
+                    <h5 class="cover-section">
+                        <a href="#">Tech</a>
+                    </h5>
+                    <h2 class="cover-title">
+                        <a href="#">Everything Apple announced at its 2019 iPhone event</a>
+                    </h2>
+                    <ul class="cover-byline">
+                        <li>
+                            by
+                            <a href="#"> Bryan Clark</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-clock"></i>
+                            <time datetime="2019-09-10T18:29:59+00:00" class="timeago" data-full-date="Sep 11, 2019 - 02:29">3 hours ago</time>
+                        </li>
+                        <li>
+                            <i class="fas fa-share-alt"></i>&nbsp; 29
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="small-top-r">
+                <div class="second-cover">
+                    <h5 class="cover-section">
+                        <a href="#">Podium</a>
+                    </h5>
+                    <h2 class="cover-title-2">
+                        <a href="#">Everything Apple announced at its 2019 iPhone event</a>
+                    </h2>
+                    <ul class="cover-byline">
+                        <li>
+                            by
+                            <a href="#"> Bryan Clark</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-clock"></i>
+                            <time datetime="2019-09-10T18:29:59+00:00" class="timeago" data-full-date="Sep 11, 2019 - 02:29">3 hours ago</time>
+                        </li>
+                        <li>
+                            <i class="fas fa-share-alt"></i>&nbsp; 29
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="small-bot-r">
+                <div class="second-cover">
+                    <h5 class="cover-section">
+                        <a href="#">Gear</a>
+                    </h5>
+                    <h2 class="cover-title-2">
+                        <a href="#">Everything Apple announced at its 2019 iPhone event</a>
+                    </h2>
+                    <ul class="cover-byline">
+                        <li>
+                            by
+                            <a href="#"> Bryan Clark</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-clock"></i>
+                            <time datetime="2019-09-10T18:29:59+00:00" class="timeago" data-full-date="Sep 11, 2019 - 02:29">3 hours ago</time>
+                        </li>
+                        <li>
+                            <i class="fas fa-share-alt"></i>&nbsp; 29
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </header>
+        <!-- #endregion -->
         <main>
+            <!-- #region news -->
             <article class="news">
-                <div><a href="#">Latest news ></a></div>
+                <div><a href="#" class="latest-news"><h2 class="latest-news">Latest news <i class="fas fa-angle-right"></i></h2></a></div>
                 <div class="sub-news">
                     <div class="news-items">
-                        <div>img</div>
-                        <div>title</div>
-                        <div>caption</div>
+                        <div>
+                            <img src="images/block-chain-480x270.jpg" alt="blockchain">
+                        </div>
+                        <div>
+                            <div>
+                                <a href="#" class="fig-caption">CHEAP: $400 off the 13-inch MacBook Pro is an out-of-the world deal</a><br>
+                                <ul class = "story-byline">
+                                    <li>
+                                        <a href="https://thenextweb.com/author/ivanmehta/">Ivan Mehta</a>
+                                    </li>
+                                    <li>
+                                        <time datetime="2019-09-11T14:13:01+00:00" class="timeago" data-full-date="Sep 11, 2019 - 22:13">1 hour ago</time>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                     <div class="news-items">
-                        <div>img</div>
-                        <div>title</div>
-                        <div>caption</div>
+                        <div>
+                            <img src="images/Untitled-design-9-368x276.jpg" alt="people">
+                        </div>
+                        <div>
+                                <a href="#" class="fig-caption">CHEAP: $400 off the 13-inch MacBook Pro is an out-of-the world deal</a><br>
+                                <ul class = "story-byline">
+                                        <li>
+                                            <a href="https://thenextweb.com/author/ivanmehta/">Ivan Mehta</a>
+                                        </li>
+                                        <li>
+                                            <time datetime="2019-09-11T14:13:01+00:00" class="timeago" data-full-date="Sep 11, 2019 - 22:13">1 hour ago</time>
+                                        </li>
+                                </ul>
+                            </div>
                     </div>
                     <div class="news-items">
-                        <div>img</div>
-                        <div>title</div>
-                        <div>caption</div>
+                        <div>
+                            <img src="images/TNW2019_GillianTans-525x270.png" alt="training">
+                        </div>
+                        <div>
+                                <a href="#" class="fig-caption">CHEAP: $400 off the 13-inch MacBook Pro is an out-of-the world deal</a><br>
+                                <ul class = "story-byline">
+                                        <li>
+                                            <a href="https://thenextweb.com/author/ivanmehta/">Ivan Mehta</a>
+                                        </li>
+                                        <li>
+                                            <time datetime="2019-09-11T14:13:01+00:00" class="timeago" data-full-date="Sep 11, 2019 - 22:13">1 hour ago</time>
+                                        </li>
+                                </ul>
+                            </div>
                     </div>
                     <div class="news-items">
-                        <div>img</div>
-                        <div>title</div>
-                        <div>caption</div>
+                        <div>
+                            <img src="images/download2-368x276.png" alt="download-1">
+                        </div>
+                        <div>
+                                <a href="#" class="fig-caption">CHEAP: $400 off the 13-inch MacBook Pro is an out-of-the world deal</a><br>
+                                <ul class = "story-byline">
+                                        <li>
+                                            <a href="https://thenextweb.com/author/ivanmehta/">Ivan Mehta</a>
+                                        </li>
+                                        <li>
+                                            <time datetime="2019-09-11T14:13:01+00:00" class="timeago" data-full-date="Sep 11, 2019 - 22:13">1 hour ago</time>
+                                        </li>
+                                </ul>
+                            </div>
                     </div>
                     <div class="news-items">
-                        <div>img</div>
-                        <div>title</div>
-                        <div>caption</div>
+                        <div>
+                            <img src="images/maxresdefault-1-480x270.jpg" alt="dog-drone">
+                        </div>
+                        <div>
+                                <a href="#" class="fig-caption">CHEAP: $400 off the 13-inch MacBook Pro is an out-of-the world deal</a><br>
+                                <ul class = "story-byline">
+                                        <li>
+                                            <a href="https://thenextweb.com/author/ivanmehta/">Ivan Mehta</a>
+                                        </li>
+                                        <li>
+                                            <time datetime="2019-09-11T14:13:01+00:00" class="timeago" data-full-date="Sep 11, 2019 - 22:13">1 hour ago</time>
+                                        </li>
+                                </ul>
+                            </div>
                     </div>
                     <div class="news-items">
-                        <div>img</div>
-                        <div>title</div>
-                        <div>caption</div>
+                        <div>
+                            <img src="images/google-protest-368x276.png" alt="protest">
+                        </div>
+                        <div>
+                                <a href="#" class="fig-caption">CHEAP: $400 off the 13-inch MacBook Pro is an out-of-the world deal</a><br>
+                                <ul class = "story-byline">
+                                        <li>
+                                            <a href="https://thenextweb.com/author/ivanmehta/">Ivan Mehta</a>
+                                        </li>
+                                        <li>
+                                            <time datetime="2019-09-11T14:13:01+00:00" class="timeago" data-full-date="Sep 11, 2019 - 22:13">1 hour ago</time>
+                                        </li>
+                                </ul>
+                            </div>
                     </div>
                     <div class="news-items">
-                        <div>img</div>
-                        <div>title</div>
-                        <div>caption</div>
+                        <div>
+                            <img src="images/Google-Play-budget-hed.jpg" alt="google">
+                        </div>
+                        <div>
+                                <a href="#" class="fig-caption">CHEAP: $400 off the 13-inch MacBook Pro is an out-of-the world deal</a><br>
+                                <ul class = "story-byline">
+                                        <li>
+                                            <a href="https://thenextweb.com/author/ivanmehta/">Ivan Mehta</a>
+                                        </li>
+                                        <li>
+                                            <time datetime="2019-09-11T14:13:01+00:00" class="timeago" data-full-date="Sep 11, 2019 - 22:13">1 hour ago</time>
+                                        </li>
+                                </ul>
+                            </div>
                     </div>
                     <div class="news-items">
-                        <div>img</div>
-                        <div>title</div>
-                        <div>caption</div>
+                        <div>
+                            <img src="images/cryto.jpg" alt="cryto">
+                        </div>
+                        <div>
+                                <a href="#" class="fig-caption">CHEAP: $400 off the 13-inch MacBook Pro is an out-of-the world deal</a><br>
+                                <ul class = "story-byline">
+                                        <li>
+                                            <a href="https://thenextweb.com/author/ivanmehta/">Ivan Mehta</a>
+                                        </li>
+                                        <li>
+                                            <time datetime="2019-09-11T14:13:01+00:00" class="timeago" data-full-date="Sep 11, 2019 - 22:13">1 hour ago</time>
+                                        </li>
+                                </ul>
+                            </div>
                     </div>
                 </div>              
             </article>
+            <!-- #endregion -->
+            <!-- #region fund -->
             <section class="fund">
-                <div class="fund-header-left">left-box</div>
-                <div class="fund-header-right">right-box</div>
-                <div class="fund-content-subbox b1f">box-1</div>
-                <div class="fund-content-subbox b2f">box-2</div>
-                <div class="fund-content-subbox b3f">box-3</div>
-                <div class="fund-content-subbox b4f">box-4</div>                
+                <div class="fund-header-left">
+                    <a href="#" class="latest-news fund-h2"><h2 class="latest-news">Latest funding rounds on Index.com <i class="fas fa-angle-right"></i></h2></a>
+                </div>
+                <div class="fund-header-right">
+                    <ul class="fund-rigth-ul">
+                        <li><a href="#">Add info</a></li>
+                        <li><a href="#">Get updates by email</a></li>
+                        <li><a href="#">See more</a></li>
+                    </ul>
+                </div>
+                <div class="fund-content-subbox b1f">
+                    <div class="first-box">
+                        <img src="https://index.tnwcdn.com/images/024640a37fcd8a8d8d30d11a4ee42ab9901056d1.jpg" alt="green bull">
+                        <h2><a href="#">Advisorymandi.com</a></h2>
+                    </div>
+                    <div class="second-box">
+                        <h4>$36M</h4>
+                        <h5>Venture Capital</h5>
+                    </div>
+                    <div class="third-box">
+                        <ul class="third-box-list1">
+                            <li><i class="fa fa-tag" aria-hidden="true"></i></li>
+                            <li>Invesment</li>
+                        </ul>
+                        <ul class="third-box-list2">
+                            <li><i class="fas fa-toolbox"></i></li>
+                            <li>EST Capital</li>
+                        </ul>
+                    </div>
+                    <div class="fourth-box">
+                            <a href="#">Investing platform AdvisoryMandi raises $36 mn from EST Capital <span class="story-title-source">on&nbsp;VCCircle Network</span></a>
+                    </div>
+                </div>
+                <div class="fund-content-subbox b2f">
+                    <div class="first-box">
+                        <img src="https://index.tnwcdn.com/images/5157d8e95cf20d90b16a84d3d0c2463fdc4ad464.jpg" alt="fund image 2">
+                        <h2><a href="#">Spirable</a></h2>
+                    </div>
+                    <div class="second-box">
+                        <h4>$6M</h4>
+                        <h5>Series A</h5>
+                    </div>
+                    <div class="third-box">
+                        <ul class="third-box-list1">
+                            <li><i class="fa fa-tag" aria-hidden="true"></i></li>
+                            <li>Video, +3</li>
+                        </ul>
+                        <ul class="third-box-list2">
+                            <li><i class="fas fa-toolbox"></i></li>
+                            <li>Frontline Ventures, +4</li>
+                        </ul>
+                    </div>
+                    <div class="fourth-box">
+                            <a href="https://www.uktech.news/featured/spirable-raises-6m-series-a-investment-20190905" target="_blank">Spirable raises £6m Series A investment <span>on&nbsp;UKTN (UK Tech News)</span></a>
+                    </div>
+                </div>
+                <div class="fund-content-subbox b3f">
+                    <div class="first-box">
+                        <img src="https://index.tnwcdn.com/images/13222cb44f053ab61d7d7a67649670aea3935762.jpg" alt="fund image 3">
+                        <h2><a href="#">Kredivo</a></h2>
+                    </div>
+                    <div class="second-box">
+                        <h4>$20M</h4>
+                        <h5>Debt Financing</h5>
+                    </div>
+                    <div class="third-box">
+                        <ul class="third-box-list1">
+                            <li><i class="fa fa-tag" aria-hidden="true"></i></li>
+                            <li>Financial Services</li>
+                        </ul>
+                        <ul class="third-box-list2">
+                            <li><i class="fas fa-toolbox"></i></li>
+                            <li>Partners for Growth</li>
+                        </ul>
+                    </div>
+                    <div class="fourth-box">
+                        <a href="https://www.avcj.com/avcj/news/3016346/partners-for-growth-seals-debut-indonesia-venture-debt-deal">Partners for Growth seals debut Indonesia venture debt deal<span> on&nbsp;AVCJ</span></a>
+                    </div>
+                </div>
+                <div class="fund-content-subbox b4f">
+                    <div class="first-box">
+                        <img src="https://index.tnwcdn.com/images/ca99f72efe782f96819b2550acd99e90963240c0.png" alt="fund image 4">
+                        <h2><a href="#">Kredivo</a></h2>
+                    </div>
+                    <div class="second-box">
+                        <h4>$1.6M</h4>
+                        <h5>Seed Funds</h5>
+                    </div>
+                    <div class="third-box">
+                        <ul class="third-box-list1">
+                            <li><i class="fa fa-tag" aria-hidden="true"></i></li>
+                            <li>Biotechnology</li>
+                        </ul>
+                        <ul class="third-box-list2">
+                            <li><i class="fas fa-toolbox"></i></li>
+                            <li>Joyance Parters</li>
+                        </ul>
+                    </div>
+                    <div class="fourth-box">
+                            <a href="http://www.finsmes.com/2019/09/sigrid-therapeutics-closes-1-6m-funding-round.html">Sigrid Therapeutics Closes $1.6M Funding Round<span> on&nbsp;FinSMEs</span></a>
+                    </div>
+                </div>                
             </section>
+            <!-- #endregion -->
+            <!-- #region categories -->
             <article class="categories">
-                <div class="apps "></div>
-                <div class="gear "></div>
-                <div class="tech"></div>
-                <div class="creative"></div>
-                <div class="podium"></div>
-                <div class="insights"></div>
-                <div class="launch"></div>
-                <div class="distract"></div>  
+                <div class="apps">
+                    <div class="cat-header">
+                        <a href="#" class="latest-news fund-h2"><h2 class="latest-news">Apps <i class="fas fa-angle-right"></i></h2></a>
+                    </div>
+                    <div class="cat-img app-image">
+                        <div></div>
+                        <div>
+                            <h5>
+                                MOST POPULAR
+                            </h5>
+                            <h2>
+                                 <a href="#">Everything Apple announced at its 2019 iPhone event</a>
+                            </h2>
+                            <ul class="c-i-app">
+                                <li>
+                                    <a href="#">Mix</a> 
+                                </li>
+                                <li>
+                                    <time datetime="2019-09-10T18:29:59+00:00" class="timeago" data-full-date="Sep 11, 2019 - 02:29">1 day ago</time>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="cat-latest">
+                        <div class="cat-left">
+                            <h5>Latest</h5>
+                            <a href="#" class="headline">Microsoft unveils new To Do as Wunderlist founder mourns its imminent death</a>
+                        </div>
+                        <div class="cat-right">
+                            <img src="images/deals1.jpg" alt="deals 1">
+                        </div>
+                    </div>
+                    <div class="cat-list">
+                        <ul>
+                            <li><h4><a href="#">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis, vel voluptas!</a></h4></li>
+                            <li><h4><a href="#">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium!</a></h4></li>
+                            <li><h4><a href="#">Lorem ipsum dolor sit amet consectetur.</a></h4></li>
+                            <li><h4><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis id obcaecati recusandae? Cum eveniet placeat sequi reiciendis dicta.</a></h4></li>
+                            <li><h4><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora.</a></h4></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="gear">
+                    <div class="cat-header">
+                        <a href="#" class="latest-news fund-h2"><h2 class="latest-news">Gear <i class="fas fa-angle-right"></i></h2></a>
+                    </div>
+                    <div class="cat-img gear-image">
+                        <div></div>
+                        <div>
+                                <h5>
+                                        MOST POPULAR
+                                    </h5>
+                                    <h2>
+                                        <a href="#">Everything Apple announced at its 2019 iPhone event</a>
+                                    </h2>
+                                    <ul class="c-i-app">
+                                        <li>
+                                            <a href="#">Mix</a> 
+                                        </li>
+                                        <li>
+                                            <time datetime="2019-09-10T18:29:59+00:00" class="timeago" data-full-date="Sep 11, 2019 - 02:29">1 day ago</time>
+                                        </li>
+                                    </ul>
+                        </div>
+                    </div>
+                    <div class="cat-latest">
+                        <div class="cat-left">
+                            <h5>Latest</h5>
+                            <a href="#" class="headline">Microsoft unveils new To Do as Wunderlist founder mourns its imminent death</a>
+                        </div>
+                        <div class="cat-right">
+                            <img src="images/deals1.jpg" alt="deals1">
+                        </div>
+                    </div>
+                    <div class="cat-list">
+                        <ul>
+                            <li><h4><a href="#">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis, vel voluptas!</a></h4></li>
+                            <li><h4><a href="#">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium!</a></h4></li>
+                            <li><h4><a href="#">Lorem ipsum dolor sit amet consectetur.</a></h4></li>
+                            <li><h4><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis id obcaecati recusandae? Cum eveniet placeat sequi reiciendis dicta.</a></h4></li>
+                            <li><h4><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora.</a></h4></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="tech">
+                    <div class="cat-header">
+                        <a href="#" class="latest-news fund-h2"><h2 class="latest-news">Tech <i class="fas fa-angle-right"></i></h2></a>
+                    </div>
+                    <div class="cat-img tech-image">
+                        <div></div>
+                        <div>
+                                <h5>
+                                        MOST POPULAR
+                                    </h5>
+                                    <h2>
+                                        <a href="#">Everything Apple announced at its 2019 iPhone event</a>
+                                    </h2>
+                                    <ul class="c-i-app">
+                                        <li>
+                                            <a href="#">Mix</a> 
+                                        </li>
+                                        <li>
+                                            <time datetime="2019-09-10T18:29:59+00:00" class="timeago" data-full-date="Sep 11, 2019 - 02:29">1 day ago</time>
+                                        </li>
+                                    </ul>
+                        </div>
+                    </div>
+                    <div class="cat-latest">
+                        <div class="cat-left">
+                            <h5>Latest</h5>
+                            <a href="#" class="headline">Microsoft unveils new To Do as Wunderlist founder mourns its imminent death</a>
+                        </div>
+                        <div class="cat-right">
+                            <img src="images/deals1.jpg" alt="deals1">
+                        </div>
+                    </div>
+                    <div class="cat-list">
+                        <ul>
+                            <li><h4><a href="#">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis, vel voluptas!</a></h4></li>
+                            <li><h4><a href="#">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium!</a></h4></li>
+                            <li><h4><a href="#">Lorem ipsum dolor sit amet consectetur.</a></h4></li>
+                            <li><h4><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis id obcaecati recusandae? Cum eveniet placeat sequi reiciendis dicta.</a></h4></li>
+                            <li><h4><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora.</a></h4></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="creative">
+                    <div class="cat-header">
+                        <a href="#" class="latest-news fund-h2"><h2 class="latest-news">Creative <i class="fas fa-angle-right"></i></h2></a>
+                    </div>
+                    <div class="cat-img creative-image">
+                        <div></div>
+                        <div>
+                                <h5>
+                                        MOST POPULAR
+                                    </h5>
+                                    <h2>
+                                        <a href="#">Everything Apple announced at its 2019 iPhone event</a>
+                                    </h2>
+                                    <ul class="c-i-app">
+                                        <li>
+                                            <a href="#">Mix</a> 
+                                        </li>
+                                        <li>
+                                            <time datetime="2019-09-10T18:29:59+00:00" class="timeago" data-full-date="Sep 11, 2019 - 02:29">1 day ago</time>
+                                        </li>
+                                    </ul>
+                        </div>
+                    </div>
+                    <div class="cat-latest">
+                        <div class="cat-left">
+                            <h5>Latest</h5>
+                            <a href="#" class="headline">Microsoft unveils new To Do as Wunderlist founder mourns its imminent death</a>
+                        </div>
+                        <div class="cat-right">
+                            <img src="images/deals1.jpg" alt="deals1">
+                        </div>
+                    </div>
+                    <div class="cat-list">
+                        <ul>
+                            <li><h4><a href="#">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis, vel voluptas!</a></h4></li>
+                            <li><h4><a href="#">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium!</a></h4></li>
+                            <li><h4><a href="#">Lorem ipsum dolor sit amet consectetur.</a></h4></li>
+                            <li><h4><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis id obcaecati recusandae? Cum eveniet placeat sequi reiciendis dicta.</a></h4></li>
+                            <li><h4><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora.</a></h4></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="podium">
+                   <div class="cat-header">
+                        <a href="#" class="latest-news fund-h2"><h2 class="latest-news">Podium <i class="fas fa-angle-right"></i></h2></a>
+                    </div>
+                    <div class="cat-img podium-image">
+                        <div></div>
+                        <div>
+                                <h5>
+                                        MOST POPULAR
+                                    </h5>
+                                    <h2>
+                                        <a href="#">Everything Apple announced at its 2019 iPhone event</a>
+                                    </h2>
+                                    <ul class="c-i-app">
+                                        <li>
+                                            <a href="#">Mix</a> 
+                                        </li>
+                                        <li>
+                                            <time datetime="2019-09-10T18:29:59+00:00" class="timeago" data-full-date="Sep 11, 2019 - 02:29">1 day ago</time>
+                                        </li>
+                                    </ul>
+                        </div>
+                    </div>
+                    <div class="cat-latest">
+                        <div class="cat-left">
+                            <h5>Latest</h5>
+                            <a href="#" class="headline">Microsoft unveils new To Do as Wunderlist founder mourns its imminent death</a>
+                        </div>
+                        <div class="cat-right">
+                            <img src="images/deals1.jpg" alt="deals1">
+                        </div>
+                    </div>
+                    <div class="cat-list">
+                        <ul>
+                            <li><h4><a href="#">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis, vel voluptas!</a></h4></li>
+                            <li><h4><a href="#">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium!</a></h4></li>
+                            <li><h4><a href="#">Lorem ipsum dolor sit amet consectetur.</a></h4></li>
+                            <li><h4><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis id obcaecati recusandae? Cum eveniet placeat sequi reiciendis dicta.</a></h4></li>
+                            <li><h4><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora.</a></h4></li>
+                        </ul>
+                    </div> 
+                </div>
+                <div class="insights">
+                    <div class="cat-header">
+                        <a href="#" class="latest-news fund-h2"><h2 class="latest-news">Insights <i class="fas fa-angle-right"></i></h2></a>
+                    </div>
+                    <div class="cat-img insights-image">
+                            <div></div>
+                            <div>
+                                    <h5>
+                                            MOST POPULAR
+                                        </h5>
+                                        <h2>
+                                            <a href="#">Everything Apple announced at its 2019 iPhone event</a>
+                                        </h2>
+                                        <ul class="c-i-app">
+                                            <li>
+                                                <a href="#">Mix</a> 
+                                            </li>
+                                            <li>
+                                                <time datetime="2019-09-10T18:29:59+00:00" class="timeago" data-full-date="Sep 11, 2019 - 02:29">1 day ago</time>
+                                            </li>
+                                        </ul>
+                            </div>
+                    </div>
+                    <div class="cat-latest">
+                        <div class="cat-left">
+                            <h5>Latest</h5>
+                            <a href="#" class="headline">Microsoft unveils new To Do as Wunderlist founder mourns its imminent death</a>
+                        </div>
+                        <div class="cat-right">
+                                <img src="images/deals1.jpg" alt="deals1">
+                        </div>
+                    </div>
+                    <div class="cat-list">
+                        <ul>
+                            <li><h4><a href="#">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis, vel voluptas!</a></h4></li>
+                            <li><h4><a href="#">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium!</a></h4></li>
+                            <li><h4><a href="#">Lorem ipsum dolor sit amet consectetur.</a></h4></li>
+                            <li><h4><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis id obcaecati recusandae? Cum eveniet placeat sequi reiciendis dicta.</a></h4></li>
+                            <li><h4><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora.</a></h4></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="launch">
+                    <div class="cat-header">
+                        <a href="#" class="latest-news fund-h2"><h2 class="latest-news">Launch <i class="fas fa-angle-right"></i></h2></a>
+                    </div>
+                    <div class="cat-img launch-image">
+                            <div></div>
+                            <div>
+                                    <h5>
+                                            MOST POPULAR
+                                        </h5>
+                                        <h2>
+                                            <a href="#">Everything Apple announced at its 2019 iPhone event</a>
+                                        </h2>
+                                        <ul class="c-i-app">
+                                            <li>
+                                                <a href="#">Mix</a> 
+                                            </li>
+                                            <li>
+                                                <time datetime="2019-09-10T18:29:59+00:00" class="timeago" data-full-date="Sep 11, 2019 - 02:29">1 day ago</time>
+                                            </li>
+                                        </ul>
+                            </div>
+                    </div>
+                    <div class="cat-latest">
+                        <div class="cat-left">
+                            <h5>Latest</h5>
+                            <a href="#" class="headline">Microsoft unveils new To Do as Wunderlist founder mourns its imminent death</a>
+                        </div>
+                        <div class="cat-right">
+                                <img src="images/deals1.jpg" alt="deals1">
+                        </div>
+                    </div>
+                    <div class="cat-list">
+                        <ul>
+                            <li><h4><a href="#">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis, vel voluptas!</a></h4></li>
+                            <li><h4><a href="#">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium!</a></h4></li>
+                            <li><h4><a href="#">Lorem ipsum dolor sit amet consectetur.</a></h4></li>
+                            <li><h4><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis id obcaecati recusandae? Cum eveniet placeat sequi reiciendis dicta.</a></h4></li>
+                            <li><h4><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora.</a></h4></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="distract">
+                    <div class="cat-header">
+                        <a href="#" class="latest-news fund-h2"><h2 class="latest-news">Distract <i class="fas fa-angle-right"></i></h2></a>
+                    </div>
+                    <div class="cat-img distract-image">
+                            <div></div>
+                            <div>
+                                    <h5>
+                                            MOST POPULAR
+                                        </h5>
+                                        <h2>
+                                            <a href="#">Everything Apple announced at its 2019 iPhone event</a>
+                                        </h2>
+                                        <ul class="c-i-app">
+                                            <li>
+                                                <a href="#">Mix</a> 
+                                            </li>
+                                            <li>
+                                                <time datetime="2019-09-10T18:29:59+00:00" class="timeago" data-full-date="Sep 11, 2019 - 02:29">1 day ago</time>
+                                            </li>
+                                        </ul>
+                            </div>
+                    </div>
+                    <div class="cat-latest">
+                        <div class="cat-left">
+                            <h5>Latest</h5>
+                            <a href="#" class="headline">Microsoft unveils new To Do as Wunderlist founder mourns its imminent death</a>
+                        </div>
+                        <div class="cat-right">
+                            <img src="images/deals1.jpg" alt="deals1">
+                        </div>
+                    </div>
+                    <div class="cat-list">
+                        <ul>
+                            <li><h4><a href="#">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis, vel voluptas!</a></h4></li>
+                            <li><h4><a href="#">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium!</a></h4></li>
+                            <li><h4><a href="#">Lorem ipsum dolor sit amet consectetur.</a></h4></li>
+                            <li><h4><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis id obcaecati recusandae? Cum eveniet placeat sequi reiciendis dicta.</a></h4></li>
+                            <li><h4><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora.</a></h4></li>
+                        </ul>
+                    </div>
+                </div>  
             </article>
-            <article class="deals">
-                <div class="deal-header-left">left</div>
-                <div class="deal-header-right">right</div>
-                <div class="deal-1">deal-1</div>
-                <div class="deal-2">deal-2</div>
-                <div class="deal-3">deal-3</div>
-                <div class="deal-4">deal-4</div>
-                <div class="deal-5">deal-5</div>
-                <div class="deal-6">deal-6</div>
-                <div class="deal-7">deal-7</div>
-                <div class="deal-8">deal-8</div>
+            <article class="news">
+                <div><a href="#" class="latest-news"><h2 class="latest-news">Latest deals <i class="fas fa-angle-right"></i></h2></a></div>
+                <div class="sub-news">
+                    <div class="news-items">
+                        <div>
+                            <img src="images/block-chain-480x270.jpg" alt="blockchain">
+                        </div>
+                        <div>
+                            <div>
+                                <a href="#" class="fig-caption">CHEAP: $400 off the 13-inch MacBook Pro is an out-of-the world deal</a><br>
+                                <ul class = "story-byline">
+                                    <li>
+                                        <a href="https://thenextweb.com/author/ivanmehta/">Ivan Mehta</a>
+                                    </li>
+                                    <li>
+                                        <time datetime="2019-09-11T14:13:01+00:00" class="timeago" data-full-date="Sep 11, 2019 - 22:13">1 hour ago</time>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news-items">
+                        <div>
+                            <img src="images/Untitled-design-9-368x276.jpg" alt="people">
+                        </div>
+                        <div>
+                                <a href="#" class="fig-caption">CHEAP: $400 off the 13-inch MacBook Pro is an out-of-the world deal</a><br>
+                                <ul class = "story-byline">
+                                        <li>
+                                            <a href="https://thenextweb.com/author/ivanmehta/">Ivan Mehta</a>
+                                        </li>
+                                        <li>
+                                            <time datetime="2019-09-11T14:13:01+00:00" class="timeago" data-full-date="Sep 11, 2019 - 22:13">1 hour ago</time>
+                                        </li>
+                                </ul>
+                            </div>
+                    </div>
+                    <div class="news-items">
+                        <div>
+                            <img src="images/TNW2019_GillianTans-525x270.png" alt="training">
+                        </div>
+                        <div>
+                                <a href="#" class="fig-caption">CHEAP: $400 off the 13-inch MacBook Pro is an out-of-the world deal</a><br>
+                                <ul class = "story-byline">
+                                        <li>
+                                            <a href="https://thenextweb.com/author/ivanmehta/">Ivan Mehta</a>
+                                        </li>
+                                        <li>
+                                            <time datetime="2019-09-11T14:13:01+00:00" class="timeago" data-full-date="Sep 11, 2019 - 22:13">1 hour ago</time>
+                                        </li>
+                                </ul>
+                            </div>
+                    </div>
+                    <div class="news-items">
+                        <div>
+                            <img src="images/download2-368x276.png" alt="download-1">
+                        </div>
+                        <div>
+                                <a href="#" class="fig-caption">CHEAP: $400 off the 13-inch MacBook Pro is an out-of-the world deal</a><br>
+                                <ul class = "story-byline">
+                                        <li>
+                                            <a href="https://thenextweb.com/author/ivanmehta/">Ivan Mehta</a>
+                                        </li>
+                                        <li>
+                                            <time datetime="2019-09-11T14:13:01+00:00" class="timeago" data-full-date="Sep 11, 2019 - 22:13">1 hour ago</time>
+                                        </li>
+                                </ul>
+                            </div>
+                    </div>
+                    <div class="news-items">
+                        <div>
+                            <img src="images/maxresdefault-1-480x270.jpg" alt="dog-drone">
+                        </div>
+                        <div>
+                                <a href="#" class="fig-caption">CHEAP: $400 off the 13-inch MacBook Pro is an out-of-the world deal</a><br>
+                                <ul class = "story-byline">
+                                        <li>
+                                            <a href="https://thenextweb.com/author/ivanmehta/">Ivan Mehta</a>
+                                        </li>
+                                        <li>
+                                            <time datetime="2019-09-11T14:13:01+00:00" class="timeago" data-full-date="Sep 11, 2019 - 22:13">1 hour ago</time>
+                                        </li>
+                                </ul>
+                            </div>
+                    </div>
+                    <div class="news-items">
+                        <div>
+                            <img src="images/google-protest-368x276.png" alt="protest">
+                        </div>
+                        <div>
+                                <a href="#" class="fig-caption">CHEAP: $400 off the 13-inch MacBook Pro is an out-of-the world deal</a><br>
+                                <ul class = "story-byline">
+                                        <li>
+                                            <a href="https://thenextweb.com/author/ivanmehta/">Ivan Mehta</a>
+                                        </li>
+                                        <li>
+                                            <time datetime="2019-09-11T14:13:01+00:00" class="timeago" data-full-date="Sep 11, 2019 - 22:13">1 hour ago</time>
+                                        </li>
+                                </ul>
+                            </div>
+                    </div>
+                    <div class="news-items">
+                        <div>
+                            <img src="images/Google-Play-budget-hed.jpg" alt="google">
+                        </div>
+                        <div>
+                                <a href="#" class="fig-caption">CHEAP: $400 off the 13-inch MacBook Pro is an out-of-the world deal</a><br>
+                                <ul class = "story-byline">
+                                        <li>
+                                            <a href="https://thenextweb.com/author/ivanmehta/">Ivan Mehta</a>
+                                        </li>
+                                        <li>
+                                            <time datetime="2019-09-11T14:13:01+00:00" class="timeago" data-full-date="Sep 11, 2019 - 22:13">1 hour ago</time>
+                                        </li>
+                                </ul>
+                            </div>
+                    </div>
+                    <div class="news-items">
+                        <div>
+                            <img src="images/cryto.jpg" alt="cryto">
+                        </div>
+                        <div>
+                                <a href="#" class="fig-caption">CHEAP: $400 off the 13-inch MacBook Pro is an out-of-the world deal</a><br>
+                                <ul class = "story-byline">
+                                        <li>
+                                            <a href="https://thenextweb.com/author/ivanmehta/">Ivan Mehta</a>
+                                        </li>
+                                        <li>
+                                            <time datetime="2019-09-11T14:13:01+00:00" class="timeago" data-full-date="Sep 11, 2019 - 22:13">1 hour ago</time>
+                                        </li>
+                                </ul>
+                            </div>
+                    </div>
+                </div>              
             </article>
-        </main> 
+            <!-- #endregion -->
+        </main>
+        <!-- #region footer  -->
         <footer>
-            <div class="social"></div>
-            <div class="legal"></div>
+            <div class="social">
+                <div class="share-social">
+                    <ul>
+                        <li class="btn"><i class="fab fa-facebook-f fa-lg"></i></li>
+                        <li class="btn"><i class="fab fa-twitter fa-lg"></i></li>
+                        <li class="btn"><i class="fab fa-youtube fa-lg"></i></li>
+                        <li class="btn"><i class="fab fa-instagram fa-lg"></i></li>
+                        <li class="btn"><i class="fab fa-pinterest fa-lg"></i></li>
+                        <li class="btn"><i class="fas fa-rss fa-lg"></i></li>
+                        <li class="btn"><i class="fas fa-envelope fa-lg"></i></li>
+                    </ul>
+                </div>
+                <div class="share-list">
+                    <ul>
+                        <li><a href="#">events</a></li>
+                        <li><a href="#">about</a></li>
+                        <li><a href="#">team</a></li>
+                        <li><a href="#">advertise</a></li>
+                        <li><a href="#">jobs</a></li>
+                        <li><a href="#">contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="legal">
+                <span><img src="images/tnw.png" alt="tnw image"> © 2006–2019 The Next Web B.V.</span>
+                <span>Made with <b>♥</b> in Leeds.</span>
+                <span>Powered by <img src="https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/stackpath.svg" alt="logo image"> </span>
+            </div>
         </footer>
+        <!-- #endregion -->
+        <script src="sticky.js"></script>
     </body>
-    <script src="sticky.js"></script>
 </html> 
 
 
-<!-- full width = 1005 > 100%
-mid width = 750 > 1005
+<!-- full width = 1008 > 100%
+mid width = 750 > 1007
 small width = 750 & Below -->
