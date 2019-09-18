@@ -194,7 +194,7 @@ header > div:first-of-type {
   justify-content: space-between;
 }
 
-.big-left:hover {  
+.big-left:hover {
   background:
     linear-gradient(to top, transparent, rgb(45, 100, 126) 150%),
     url(../images/witcher.jpg) no-repeat;
@@ -629,7 +629,7 @@ main {
   background-color: white;
 }
 
-.app-image {  
+.app-image {
   background: transparent url(../images/ab.jpg) no-repeat;
   background-color: rgb(190, 182, 182);
   background-position: 100% 100%;
@@ -800,7 +800,7 @@ main {
   grid-template-rows: 0.5fr 2fr 0.5fr 3fr;
 }
 
-.tech-image {  
+.tech-image {
   background: transparent url(../images/OnePlus-7-514x270.jpg) no-repeat;
   background-color: rgb(190, 182, 182);
   background-position: 20% 20%;
@@ -844,7 +844,7 @@ main {
   grid-template-rows: 0.5fr 2fr 0.5fr 3fr;
 }
 
-.podium-image {  
+.podium-image {
   background: transparent url(../images/sale_18296_primary_image.jpg) no-repeat;
   background-color: rgb(190, 182, 182);
   background-position: 20% 20%;
@@ -866,7 +866,7 @@ main {
   grid-template-rows: 0.5fr 2fr 0.5fr 3fr;
 }
 
-.insights-image {  
+.insights-image {
   background: transparent url(../images/Stadia-black-hed.jpg) no-repeat;
   background-color: rgb(190, 182, 182);
   background-position: 50% 100%;
@@ -889,7 +889,7 @@ main {
   grid-template-rows: 0.5fr 2fr 0.5fr 3fr;
 }
 
-.launch-image {  
+.launch-image {
   background: transparent url(../images/MK-11-368x276.jpg) no-repeat;
   background-color: rgb(190, 182, 182);
   background-position: 50% 100%;
