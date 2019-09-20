@@ -38,7 +38,7 @@ https://www.theodinproject.com/courses/html5-and-css3/lessons/building-with-resp
 #Github Repo
 https://github.com/geraldgsh/the-next-web-clone
 
-## Authors
+## Contributors
 [David Martinez](https://github.com/davitomix)
 [Gerald Goh](https://github.com/geraldgsh)
 
