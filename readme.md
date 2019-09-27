@@ -35,6 +35,8 @@ Remember to double-check if you page layout does not brake on smaller screens.
 ## Source
 https://www.theodinproject.com/courses/html5-and-css3/lessons/building-with-responsive-design
 
+* [Live preview](https://davitomix.github.io/the-next-web-clone/)
+
 #Github Repo
 https://github.com/geraldgsh/the-next-web-clone
 
