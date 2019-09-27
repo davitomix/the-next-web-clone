@@ -43,6 +43,3 @@ https://github.com/geraldgsh/the-next-web-clone
 ## Contributors
 [David Martinez](https://github.com/davitomix)
 [Gerald Goh](https://github.com/geraldgsh)
-
-
-
