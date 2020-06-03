@@ -138,10 +138,10 @@ body {
 }
 
 .fa-search {
-  border: 1px solid darkgrey;
   color: rgb(133, 133, 133);
   float: right;
   padding: 8px;
+  margin-right: 5px;
 }
 
 .fa-search:hover {
@@ -1193,7 +1193,6 @@ footer {
 
   .fa-bars,
   .fa-search {
-    border: 1px solid darkgrey;
     color: rgb(133, 133, 133);
     float: right;
     padding: 8px;
