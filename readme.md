@@ -1,12 +1,13 @@
 # The Next Web Clone.
-
 > This project consists of replicating the The Next Web website putting emphasis on how it behaves differently depending on the size of the screen where the website is rendered.
 
 ## Desktop
 ![screenshot](./main.gif)
 
 ## Mobile
-![screenshot](./mobile.gif)
+<p align="center">
+  <img src="./mobile.gif">
+</p>
 
 ## Built With
 - CSS
@@ -17,7 +18,7 @@
 [Live Demo Link :rocket:](https://davitomix.github.io/the-next-web-clone/)
 
 
-## Getting Started
+## Usage
 - Download the repo in your computer.
 - Drag and drop the index.html file into your web browser.
 - Enjoy.
@@ -44,7 +45,7 @@ Feel free to check the [issues page](issues/).
 ## Show your support
 Give a ⭐️ if you like this project!
 
-## Source
+## Source :gem:
 [The Odin Project](https://www.theodinproject.com/courses/html5-and-css3/lessons/building-with-responsive-design)
 
 ## 📝 License
